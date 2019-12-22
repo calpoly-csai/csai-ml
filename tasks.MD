@@ -7,7 +7,7 @@ Please write your name under any tasks you would like to take on!
 ## Learned Variable Extraction
 
 * Training [Spacy NER Recognition Model](https://spacy.io/usage/training)
-* Richa
+* DRIs: Richa
 
 
 ## Manual Variable Extraction (for Samples)
@@ -15,11 +15,11 @@ Please write your name under any tasks you would like to take on!
 ### Names
 * [Spacy NER](https://spacy.io/usage/linguistic-features#named-entities)
 * Python [NameParser](https://nameparser.readthedocs.io/en/latest/) Module
-* Richa
+* DRIs: Richa
 
 ### Course Numbers
 * [Spacy Chunking and Rule-Based Matching](https://spacy.io/usage/rule-based-matching)
-* Richa
+* DRIs: Richa
   
 ### Buildings
 
