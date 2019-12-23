@@ -6,13 +6,16 @@
 ### Names
 * [Spacy NER](https://spacy.io/usage/linguistic-features#named-entities)
 * Python [NameParser](https://nameparser.readthedocs.io/en/latest/) Module
+* Database/Dictionary based Search
 * DRIs: Richa
 
 ### Course Numbers
 * [Spacy Chunking and Rule-Based Matching](https://spacy.io/usage/rule-based-matching)
+* Database/Dictionary based Search
 * DRIs: Richa
   
 ### Buildings
+* Database/Dictionary based Search
 
 ### Degree Programs (Majors, Minors)
 * Database/Dictionary based Search
