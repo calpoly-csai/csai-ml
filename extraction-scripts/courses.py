@@ -1,0 +1,1 @@
+# Extracting Course Names (ex. CSC 482)
