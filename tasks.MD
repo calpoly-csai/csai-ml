@@ -23,6 +23,9 @@ Please write your name under any tasks you would like to take on!
   
 ### Buildings
 
+### Degree Programs (Majors, Minors)
+* Database/Dictionary based Search
+* DRIs: Richa
 
 
 
