@@ -1,0 +1,118 @@
+G2 | Which courses include SAS in the curriculum? | The courses that include SAS are STAT 330, STAT 440, STAT 441. | “”
+G2 | How many units are required for the [Degree]? | The number of units required for the  [Degree] is [Units]. | select TOTALUNITS from [Degree] where COURSETYPE = ‘TOTAL UNITS’;
+G2 | What are the [Coursetype] courses needed for [Degree]? | The [Coursetype] courses needed for [Degree] are [List of Course]. | select SUBJ, ID from COURSES where [Degree] like ‘%[Coursetype]%’;
+G2 | Is [Course] a [Coursetype] course for the [Degree]? | Yes, [Course] is a [Coursetype] course for [Degree]. | select * from COURSES where [Degree] like ‘%[Coursetype]%’;
+G2 | What are the non-STAT classes that I need to choose from for my elective credits? | The non-STAT classes that you need to choose from are [List of Course]. | select SUBJ, ID from COURSES where MAJOR like ‘%ELECTIVE%’ and SUBJ not like ‘%STAT%’;
+G2 | Are there [Subject] classes that I can take for [Coursetype] credit in [Degree]? | Yes, you can take [Subject] classes for [Coursetype]. They are: [List of Course] | select SUBJ, ID from COURSES where [DEGREE] like ‘%[Coursetype]%’ and SUBJ like ‘%[Subject]%’;
+G2 | Are there [Coursetype] courses available from departments outside of [Subject] in [Degree]? | Yes, there are [Coursetype] courses available from departments outside of [Subject]. Choose from these classes: [List of Course]. | select SUBJ, ID from COURSES where [Degree] like %[Coursetype]% and SUBJ not like [Subject];
+G2 | What departments are all the possible [Coursetype] classes from? | The different departments that the [Coursetype] classes are from are STAT, DATA, CSC, IME, ITP, and MATH. | “”
+G2 | What course levels are the possible [Subject] [Coursetype] classes that I can take? | The possible [Subject] [Coursetype] classes are [List of Course level]. |
+G2 | How many [Course level] courses are required in [Degree]? | The number of [Course level] level courses required in [Degree] is [Num]. | select * from COURSES where ID >= [Course level] and ID <= [Courselevel] + 100 and [Degree] is not null;
+G2 | Who should I contact if I have questions about the certificate program? | The professors you ought to contact are Hunter Glanz or Rebecca Ottesen. Their corresponding contact information is hglanz@calpoly.edu and rottesen@calpoly.edu. | “”
+G2 | To which professors can I ask questions related to the certificate program? | You should contact either Hunter Glanz or Rebecca Ottesen. Their corresponding contact information is hglanz@calpoly.edu and rottesen@calpoly.edu. | “”
+G2 | Which GE Areas are required for the major? | The GE Areas required are A, B, C, D, and E. | “”
+G2 | Do I need GE Area [GE Area]? | Yes, GE Area [GE Area] is needed. | “”
+G2 | What are all the GEs I need to do? | The GE Areas that must be completed are A, B, C, D, and E. | “”
+G2 | How many GE Areas are required for [Degree]? | There are 5 GE Areas that must be completed for [Degree]. | “”
+G2 | What sections of [GE Area] must be completed? | The sections of [GE Area] that must be completed are [List of GE Area Section]. | select area from GE where section=[GE Area];
+G2 | Is [GE Area] necessary to be completed for [Degree]? | Yes, [GE Area] is required for [Degree]. | select * from GE where area = [GE Area]
+G2 | Is there a minimum GPA requirement to graduate with the major? | Yes, you need a minimum of a 2.0 GPA to graduate with the statistics major. | “”
+G2 | Is a [GPA] GPA enough to graduate with a [Degree]? | Yes, a [GPA] GPA enough to graduate with a [Degree]. | “”
+G2 | Can I graduate with a [GPA] GPA? | Yes, you can graduate with a [GPA] GPA. | “”
+G2 | What are the learning objectives of [Degree]? | The learning objectives of [Degree] are [List of Learning Objective]. | select * from LEARNING_OBJS;
+G2 | What is Learning Objective [Num] ? | Learning Objective #[Num] is : [Learning Objective]. | select * from LEARNING_OBJS where NUM = [Num];
+G2 | Can you tell me what learning objective number [Num] is? | Learning Objective #[Num] is: [Learning Objective]. | select * from LEARNING_OBJS where NUM=[Num];
+G2 | What is the highest level [Subject] class I can take to count as a [Coursetype]? | The highest level [Subject] class you could take is [Course Level]. | select max(ID) from COURSES where SUBJ = [Subject] group by (SUBJ, ID);
+G2 | What course do I need to take to apply for the [Degree]? | To apply for the [Degree], you need to take [List of Course]. | select COURSES from APPLY where MINOR=[Degree];
+G2 | Do I need to take a certain class to apply for the [Degree]? | Yes, to apply for the [Degree], you need to take [List of Course]. | select COURSES from APPLY where MINOR=[Degree];
+G2 | Would taking [Course] fulfil a requirement to apply for [Degree]? | Yes, taking [Course] would fulfil a requirement to apply for [Degree]. | select * from APPLY where COURSES like ‘%[Course]%’;
+G2 | Can I take [Course] to be able to apply to [Degree]? | Yes, you can take [Course] to be able to apply to [Degree]. | select * from APPLY where COURSES like ‘%[Course]%’.
+G2 | Is [Course] part of an introductory sequence in the minor? | Yes, [Course] is part of an introductory sequence in the minor.
+G2 | What are all the first courses in the introductory sequences for the minor? | The first courses are  [List of Course].
+G2 | What are all the possible introductory sequences in the minor? | All the possible introductory sequences in the minor are: [List of Course].
+G2 | Is there a Senior Project required for the major? | Yes, a senior project is required for the major. | “”
+G2 | Around how many hours of work is required on the senior project? | At least 90 hours of work advised by a Statistics faculty member is required. | “”
+G2 | How long does it take to do the senior project? | The Senior project should take at least 90 hours of work. Your project also needs to be advised by a Statistics faculty member. | “”
+G2 | Who are the advisors for [Degree]? | The advisors for [Degree] are [STAT-advisors]. | select FIRSTNAME, LASTNAME from ADVISORS where SUBJ like ‘%[Degree]%’;
+G2 | Who is in charge of [Degree]? | The advisors for [Degree] are [STAT-advisors]. | select FIRSTNAME, LASTNAME from ADVISORS where SUBJ like ‘%[Degree]%’;
+G2 | What is the contact information for [Degree] advisors? | The contact information for [STAT-Advisors-Names] is [STAT-Advisors-ContactInfo]. | select FIRSTNAME, LASTNAME, EMAIL from ADVISORS where SUBJ like ‘%[Degree]%’;
+G2 | How can I contact [Degree] advisors? | The contact information for [STAT-Advisors-Names] is [STAT-Advisors-ContactInfo]. | select FIRSTNAME, LASTNAME, EMAIL from ADVISORS where SUBJ like ‘%[Degree]%’;
+G2 | How many [Coursetype] units are in [Degree]? | [Degree] contains [Units]. | select TOTALUNITS from [Degree] where COURSETYPE like ‘%[Coursetype]%’;
+G2 | How many [Coursetype] classes do you take for [Degree]? | You would take [Num] classes for [Degree].| select SUBJ,ID from COURSES where [Degree] like ‘%[Coursetype]%’;
+G2 | How many [Coursetype] classes are in are in [Degree]? |  [Degree] contains [Num] [Coursetype] classes. | select count(SUBJ,ID) from COURSES where [Degree] like ‘%[Coursetype]%’;
+G2 | What is the minimum GPA for the [Degree]? | The minimum GPA for [Degree] is a 2.0. | “”
+G2 | What GPA do I need to graduate with a [Degree]? | The minimum GPA for [Degree] is a 2.0. | “”
+G2 | How many free elective units does the [Degree] have? | [Degree] has 5 units of free electives. | “”
+G2 | How many free electives can I take for [Degree]? | [Degree] has 5 units of free electives. | “”
+G2 |  Does the major require you to take the GWR (Graduation Writing Requirement)? | Yes, it is required to take the GWR. | “”
+G2 | Do STAT majors take the GWR? | Yes, it is required to take the GWR. | “”
+G2 | What courses need to be taken to switch into the major? | Completion of STAT 301-302* or another introductory sequence with at least a C in each course, Completion of MATH 141-142 with at least a C in each course, Completion of CPE 101 with at least a C- | “”
+G2 | What do I need to do to switch into the major? | Completion of STAT 301-302* or another introductory sequence with at least a C in each course, Completion of MATH 141-142 with at least a C in each course, Completion of CPE 101 with at least a C-, and permission from the Department Head. | “”
+G2 | Who is the advisor for students changing into [Degree]? | The Department Head, Allen Rossman | “”
+G2 | Who do I go to if I want to switch into the major? | The Department Head, Allen Rossman | “”
+G2 | How do I switch into Stats? | Completion of STAT 301-302* or another introductory sequence with at least a C in each course, Completion of MATH 141-142 with at least a C in each course, Completion of CPE 101 with at least a C-, and meet with the department head, Allen Rossman. | “”
+G2 | Who do I contact to switch into the major? | You need to contact the Department Head, Allen Rossman. | “”
+G2 | Can I take [Course] as a [Coursetype] for [Degree]? | Yes, you can take [Course] as a [Coursetype] for [Degree].| select SUBJ,ID from COURSES where [Degree] like ‘%[Coursetype]%’;
+G2 | What general fields are included in the support electives? | The general fields are Biology & Life Sciences, Business & Economics, Computer Science & Data Science, Industrial Engineering & Technology, Journalism, Mathematics, Political Science & Psychology. | “”
+G2 | What are the support elective categories? | The general fields are Biology & Life Sciences, Business & Economics, Computer Science & Data Science, Industrial Engineering & Technology, Journalism, Mathematics, Political Science & Psychology. | “”
+G2 | Is [Course] part of a category for support electives for [Degree]? | Yes, it is part of [Support Category]. | “”
+G2 | Is [Course] found under a support elective category for [Degree]? | Yes, it is part of [Support Category]. | “”
+G2 | Where can I find the [Degree] Application sheet? | The Minor Application sheet is located in the Statistics Department Foyer. | “”
+G2 | How can I apply for [Degree]? | The Minor Application sheet is located in the Statistics department foyer, and you must take [List of Course]. | select COURSES from APPLY where MINOR=’[Degree]’;
+G2 | What is the course number that I should enroll in for the Senior Project? | The course numbers are STAT 461 and STAT 462 for Senior Projects. | “”
+G2 | What courses are required for Senior Projects? | The course numbers are STAT 461 and STAT 462 for Senior Projects. | “”
+G2 | Where can I find college advising for COSAM? | COSAM advising is located in The College of Science and Mathematics Advising Center is located in Science North (Bldg 53), Room 211. | “”
+G2 | Who advises for the college? |  COSAM advising is located in The College of Science and Mathematics Advising Center is located in Science North (Bldg 53), Room 211. | “”
+G2 | How can I get my support electives approved for the major? | A meeting with your major advisor is always required to approve your support electives. | “”
+G2 | Do I need to get my support electives approved? | A meeting with your major advisor is always required to approve your support electives. | “”
+G2 | What are the different components for a Degree Senior Project? | The different components are Written Requirements, Public Presention, and a Final Report. More information here: https://content-calpoly-edu.s3.amazonaws.com/statistics/1/documents/SeniorProjects/SeniorProjectGuidelines18-19_100118.pdf | “”
+G2 | What is part of the Senior Project for the major? | The different components are Written Requirements, Public Presention, and a Final Report. More information here: https://content-calpoly-edu.s3.amazonaws.com/statistics/1/documents/SeniorProjects/SeniorProjectGuidelines18-19_100118.pdf | “”
+G2 | Is [Course] required in [Degree]? | Yes, [Course] is required for [Degree]. | select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’;
+G2 | Which courses are required for the [Degree]? | [List of Courses] are required for the [Degree]. | select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’;
+G2 | How many GE units are in [Degree]? | BS in STATS contains 64 GE Units. | “”
+*G2 | Which [Subject] courses are required for the [Degree]? | [List of Course] are required for the [Degree]. | select SUBJ,ID from COURSES where SUBJ=[Subject] and [Degree] = ‘%REQUIRED%’;
+*G2 | How many [Subject] courses are required for the [Degree]? | [Num] [Subject] courses are required for the [Degree]. They are: [List of Course]. | select SUBJ,ID from COURSES where SUBJ=[Subject] and [Degree] = ‘%REQUIRED%’;
+*G2 | Are there any [Subject] courses required for the [Degree]? | Yes, [Num] [Subject] courses are required for the [Degree]. They are: [List of Courses]. | select SUBJ,ID from COURSES where SUBJ=[Subject] and [Degree] = ‘%REQUIRED%’;
+G2 | Which courses in the [Degree] can be taken credit/no credit? | Any 4 units of a GE can be taken credit/no credit in the [Degree]. | “”
+G2 | Can I take credit/no credit courses for the [Degree]? | Yes, 4 units of a GE can be taken credit/no credit in the [Degree]. | “”
+G2 | Can I take any classes Pass/Fail in [Degree]? | Yes, you can take 4 units of any GE Pass/Fail in [Degree]. | “”
+G2 | How many courses are in the [Degree]? | [Num] courses are in the [Degree]. | select SUBJ,ID from COURSES where [Degree] is not null;
+G2 | Which courses are in the [Degree]? | [List of Course] are in the [Degree]. | select SUBJ,ID from COURSES where [Degree] is not null;
+G2 | How many units of [Course level] courses are required for the [Degree]? | [Units] of [Course level] courses are required for the [Degree]. They are: [List of Course].  | select sum(units) from COURSES where [Degree] like ‘%REQUIRED%’ and MOD(ID, 100) == MOD([Course level], 100);
+G2 | How many courses of [GE Area Section] are in [Degree]? | [Num] courses are required in [GE Area Section] for [Degree]. | select area from GE where area=[GE Area Section];
+G2 | Do I have to take extra classes outside of the [Degree] for [Degree]? | Yes, [List of Courses] are required for the [Degree] but are not required for the [Degree]. |  select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’ minus select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’;
+G2 | How many courses outside of the [Degree] are required for [Degree]? | [Num] courses are required for the [Degree] but are not required for the [Degree]. They are: [List of Course]. | select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’ minus select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’;
+G2 | How many units overlap with the [Degree] and [Degree]? | [Units] overlap with the [Degree] and [Degree]. | select sum(UNITS) from COURSES where [Degree] is not null and [Degree] is not null;
+G2 | What are the classes that overlap between [Degree] and [Degree]? | [List of Course] are the same in [Degree] and [Degree]. | select SUBJ,ID from COURSES where [Degree] is not null intersect select SUBJ,ID from COURSES where [Degree] is not null;
+G2 | Are there any classes that are the same in both [Degree] and [Degree]? | Yes, [List of Course] are the same in [Degree] and [Degree]. | select SUBJ,ID from COURSES where [Degree] is not null intersect select SUBJ,ID from COURSES where [Degree] is not null;
+G2 | How many [Units] classes are required for the [Degree]? | [Num] [Units] courses are required for [Degree]. They are: [List of Course]. | select SUBJ,ID from COURSES where UNITS=[Units] and [Degree] like ‘%REQUIRED%’;
+G2 | Which [Units] classes are required for the [Degree]? | [List of Course] are all [Units] courses required for the [Degree]. | select SUBJ,ID from COURSES where UNITS=[Units] and [Degree] like ‘%REQUIRED%’;
+G2 | Are there [Units] classes I have to take for the [Degree]? | Yes, these are the [Units] courses you have to take: [List of Courses]. | select SUBJ,ID from COURSES where UNITS=[Units] and [Degree] like ‘%REQUIRED%’;
+G2 | How many units of [Subject] courses are required for [Degree]? | [Units] of [Subject] courses are required for the [Degree] | select sum(units) from COURSES where SUBJ=[Subject] and [Degree] like ‘%REQUIRED% groupby [Subject]’;
+G2 | Which [Subject] courses can I take as an [Coursetype]? | These are the [Subject] courses you can take as an elective: [List of Courses] | select SUBJ,ID from COURSES where SUBJ=[Subject] and MAJOR like ‘%[Coursetype]%’;
+G2 | Are there any [Subject] courses I can take as an elective? | Yes, these are the [Subject] courses you can take as an elective: [List of Courses] | select SUBJ,ID from COURSES where SUBJ=[Subject] and MAJOR like ‘%[Coursetype]%’;
+G2 | How many options do I have for [Subject] elective courses? | You have [Num] options for [Subject] courses. They are: [List of Course] | select SUBJ,ID from COURSES where SUBJ=[Subject] and MAJOR like ‘%[Coursetype]%’;
+G2 | What is the number of [Subject] [Coursetype] courses that I can choose from? | You have [Num] options. They are: [List of Course] | select SUBJ,ID from COURSES where SUBJ=[Subject] and MAJOR like ‘%[Coursetype]%’;
+G2 | Is [Course] a [Units] class? | Yes, [Course] is a [Units] class | select UNITS from COURSE;
+G2 | What List A courses can I choose from? | The List A courses you can choose from are: [List of Courses] |  select SUBJ,ID from COURSES where [Degree] like ‘%List A%’;
+G2 | What List B elective courses can I choose from? | The List B courses you can choose from are: [List of Courses] |  select SUBJ,ID from COURSES where [Degree] like ‘%List B%’;
+G2 | How many units of approved support electives are required for [Degree]? | 8 units of approved support electives are required for [Degree]. | select * from [Degree] where COURSETYPE like ‘%support%’;
+G2 | How many courses do I have to choose from in List A? | You have to choose 3 from the following: [List of Courses]. |  select SUBJ,ID from COURSES where [Degree] like ‘%List A%’;
+G2 | How many courses do I have to choose from in List B? | You have to choose 3 from the following: [List of Courses]. |  select SUBJ,ID from COURSES where [Degree] like ‘%List B%’;
+G2 | What are the List A courses I have available for [Degree]? | [List of Course] are all the List A courses for [Degree]. |  select SUBJ,ID from COURSES where [Degree] like ‘%List A%’ ;
+G2 | What courses come under List A for [Degree]? | The courses that come under List A for [Degree] are: [List of Course] | select SUBJ,ID from COURSES where [Degree] like ‘%List A%’;
+G2 | What are the List B courses I have available for [Degree]? | [List of Course] are all the List B courses for [Degree]. | select SUBJ,ID from COURSES where [Degree] like ‘%List B%’;
+G2 | What courses come under List B for [Degree]? | The courses that come under List B for [Degree] are: [List of Course] | select SUBJ,ID from COURSES where [Degree] like ‘%List B%’;
+G2 | Are there any capstones required for the [Degree]? | Yes, there are capstones for the [Degree]. | select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’ and name like ‘%capstone%’;
+G2 | What are the capstone classes required for [Degree]? | These are the capstones required for [Degree]: [List of Course] | select SUBJ,ID from COURSES where [Degree] like ‘%REQUIRED%’ and name like ‘%capstone%’;
+G2 | How many minors are available for this department? | There are 3 minors available for this department: Statistics, Data Science, and Actuarial Preparation | “”
+G2 | What are the minors available? | These are the minors that are available in the department: Statistics, Data Science, and Actuarial Preparation | “”
+G2 | Are there minors available for the major? | Yes, there are 3 minors available in the Statistics department. They are: Statistics, Data Science, and Actuarial Preparation. | “”
+G2 | Does the major require a USCP course? | Yes, every major requires a USCP course. | “”
+G2 | Is it required to take a USCP course to graduate with the major? | Yes, every major requires a USCP course. | “”
+G2 | Are there any free electives for [Degree]? | Yes, [Degree] has 5 units of free electives. | “”
+G2 | Are free electives required to graduate with [Degree]? | Yes, [Degree] requires 5 units of free electives.| “”
+G2 | How many units is [Course]? | [Course] is [Units]. | select UNITS from COURSES;
+G2 | What are the prereqs for [Course]? | The prereqs for [Course] are: [List of Course] | selects PREREQS from COURSES;
+G2 | Is [Course] a prereq for [Course]? | Yes, [Course] is a prereq for [Course]. | select PREREQS from COURSES;
+G2 | Can I take [Course] as a prereq for [Course]? | Yes, [Course] is a prereq for [Course]. | select PREREQS from COURSES;
