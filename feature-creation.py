@@ -75,6 +75,7 @@ def classify_question(test, overall_features, classifier):
         if key in test_vector:
             test_vector[key] = test_features[key]
         else:
+            # IF A WORD IS NOT IN THE EXISTING FEATURE SET, IT MAY BE A QUESTION WE CANNOT ANSWER.
             test_vector["not related"] += 250
     test_vector = np.array(list(test_vector.values()))
     test_vector = test_vector.reshape(1, len(test_vector))
