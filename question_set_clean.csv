@@ -19,45 +19,26 @@ Is [COURSE] currently offered?
 Is [COURSE] a 4 unit class?
 Does [COURSE] have any prerequisites?
 What terms is [COURSE] typically offered?
-What terms is [COURSE] typically offered?
-Which terms is [COURSE] offered?
 Which terms is [COURSE] offered?
 Does [COURSE] require consent of instructor?
-Does [COURSE] require consent of instructor?
-Can I get into [COURSE] with instructor's consent?
 Can I get into [COURSE] with instructor's consent?
 What are the prerequisites for [COURSE]?
-What are the prerequisites for [COURSE]?
-What classes do I have to take before [COURSE]?
 What classes do I have to take before [COURSE]?
 What are the recommended prerequisites for [COURSE]?
-What are the recommended prerequisites for [COURSE]?
-What classes do I need in order to take [COURSE]?
 What classes do I need in order to take [COURSE]?
 Which classes have [COURSE] as a prerequisite?
-Which classes have [COURSE] as a prerequisite?
 Does [COURSE] have an upper divisional prerequisite?
-Does [COURSE] have an upper divisional prerequisite?
-Do I need a C- or better in [COURSE] to take any other classes?
 Do I need a C- or better in [COURSE] to take any other classes?
 What is the shortest path to taking [COURSE]?
 Which classes require [COURSE] standing?
 Which classes do not require [COURSE] standing?
 When do most people take [COURSE]?
 Is [COURSE] limited in total credit?
-Is [COURSE] limited in total credit?
 Can I select [COURSE] as a tech elective?
 What is the structure of [COURSE]?
-What is the structure of [COURSE]?
-How many units is [COURSE]?
 How many units is [COURSE]?
 Is [COURSE] crosslisted in another department?
-Is [COURSE] crosslisted in another department?
 Is [COURSE] credit/no credit grading only?
-Is [COURSE] credit/no credit grading only?
-What is [COURSE] about?
-What is [COURSE] about?
-What topics are covered in [COURSE]?
 What topics are covered in [COURSE]?
 What is the course title for [COURSE]?
 What is [COURSE] also called?
@@ -83,7 +64,6 @@ When is [COURSE] available?
 When can I take [COURSE]?
 Does [COURSE] fulfill more than one requirement?
 Can I use [COURSE] to fulfill more than one requirement?
-How many units is [COURSE]?
 How many units does [COURSE] have?
 How many units does [COURSE] fulfill?
 What does [COURSE] fulfill?
@@ -95,7 +75,6 @@ How many lectures make up [COURSE]?
 Does [COURSE] have a lab?
 Do I have to take a lab with [COURSE]?
 How many labs does [COURSE] have?
-Does [COURSE] have any prerequisites?
 How many prerequisites does [COURSE] have?
 Are there any prerequisites for [COURSE]?
 What classes can I take instead of [COURSE]?
@@ -104,7 +83,6 @@ Are there any alternatives for [COURSE]?
 How many alternative does [COURSE] Have?
 Can I take something else instead of [COURSE]?
 What courses substitute [COURSE]?
-How many units do I need to take to be considered a [COURSE]?
 What STAT courses have [COURSE] as a prereq?
 What courses do you need to take before taking [COURSE]?
 Does [COURSE] have any preqs?
@@ -118,8 +96,6 @@ Does [COURSE] help me get a stats minor?
 Does [COURSE] contribute to my stats minor?
 Has [COURSE] ever been offered by the stats department?
 When has [COURSE] been offered?
-How many units is [COURSE]?
-What is the name of [COURSE]?
 What class is [COURSE]?
 What is the description of [COURSE]?
 What do you learn in [COURSE]?
@@ -153,22 +129,12 @@ Is [COURSE] an upper level course?
 Is [COURSE] a lower level course?
 When should I take [COURSE]?
 What is [COURSE]?
-When is [COURSE] typically offered?
-How many units is [COURSE]?
 Does the department offer [COURSE].
-What class is [COURSE]?
 What will I learn in [COURSE]?
 Is there a class on [COURSE]?.
-What class is [COURSE]?
-What is the name of [COURSE]?
-How many units is [COURSE]?
-How many units is [COURSE]?
 Are there any workshops or study sessions available for [COURSE]?
-What are the prerequisites for [COURSE]?
 What courses are needed to take [COURSE]?
-How many units is [COURSE]?
 How much credits is [COURSE] worth?
-When is [COURSE] offered?
 What is the number for [COURSE]?
 What courses have [COURSE] as a prerequisite?
 What comes after [COURSE]?
@@ -176,7 +142,6 @@ What is the description for [COURSE]?
 Who should I take [COURSE] with?
 Who typically teaches [COURSE]?
 Does [COURSE] have any non CS/SE prerequisites?
-Does [COURSE] have a lab?
 Is [COURSE] offered on a Credit/No Credit basis?
 Is there a grade prerequesite for [COURSE]?
 Does [COURSE] have any corequisites?
@@ -190,19 +155,14 @@ What course number does [COURSE] have?
 What course name does [COURSE] have?
 How many units of lab does [COURSE] have?
 Are there any recommended classes for [COURSE]?
-Does [COURSE] require consent of instructor?
 Is [COURSE] corsslisted?
 Which departments does [COURSE] have prerequisites in?
-Does [COURSE] fulfill any GE requirements?
 On what level is [COURSE]?
 Which courses require [COURSE]
-How many units do I need to take to be considered a [COURSE]?
 Who is the best professor to take for [COURSE]?
-Who should I take [COURSE] with?
 Who teaches [COURSE]?
 Who is usually the professor for [COURSE]?
 Who has taught [COURSE] in the past?
-How many units do I need to take to be considered a [COURSE]?
 What is the highest rated polyrating professor for [COURSE]?
 What is the highest rated polyrating professor that is currently teaching [COURSE]?
 What is the highest rated polyrating professor that taught [COURSE] last quarter?
@@ -270,7 +230,6 @@ Is [PROF] a faculty advisor?
 What are the research interests of [PROF]?
 What research areas are [PROF] interested in?
 What is [PROF] researching?
-What is [PROF]'s poly rating?
 What is the average polyrating of [PROF]?
 What is [PROF] rated on polyratings?
 How good of a professor is [PROF]?
@@ -278,7 +237,6 @@ Is [PROF] a good professor?
 Is [PROF] well liked?
 Which of [PROF] has the highest polyrating?
 What is the URL for [PROF]'s polyratings?
-How many courses is [PROF] teaching?
 How many different classes will [PROF] teach next quarter?
 What courses has [PROF] taught?
 What courses does [PROF] teach?
@@ -317,13 +275,10 @@ What is the average length of papers published by [PROF]?
 Where can I learn more about [PROF]'s research?
 In what journals has [PROF] been published?
 What journals has [PROF] published papers in?
-What is [PROF]'s email?
 How can I contact [PROF]?
 What is [PROF]'s contact information?
-What is [PROF]'s phone number?
 What number do I call to reach [PROF]?
 How can I reach [PROF]?
-Where is [PROF]'s office?
 In what room is [PROF]'s office?
 Where can I find [PROF]'s website?
 Does [PROF] have a personal website?
@@ -366,10 +321,7 @@ When did [PROF] get their doctorate?
 What year did [PROF] get their doctorate?
 What is [PROF]'s title?
 What is the title of [PROF]?
-What is the email of [PROF]?
-What is [PROF]'s phone number?
 What is the phone number of [PROF]?
-Where is [PROF]'s office?
 What building is [PROF]'s office in?
 What time does [PROF] have office hours today?
 What days does [PROF] have office hours?
@@ -392,7 +344,6 @@ What are the Mathematics/Statistics Support Elective options for [MMC]
 What are the approved technical electives for [MMC]
 Which courses will count as approved external electives for [MMC]
 Is taking the GRE required for acceptance into the 4+1 program for [MMC]?
-Which courses will count as approved external electives for [MMC]
 What classes are availabe to satisfy the pre-requisite technical elective course for [MMC]?
 Which courses will count as approved pre-requisite technical electives for [MMC]
 What [MMC] electives are offered next quarter?
@@ -453,7 +404,6 @@ What are some [MMC] resources that are available?
 What resources are there for [MMC]?
 Where can I get advising for a [MMC]?
 What are the course numbers that are considered independent study in [MMC]?
-How many units does the [MMC] require?
 How many units do I need for a [MMC]?
 What are the steps to apply for the [MMC]?
 How do I apply for a [MMC]?
@@ -465,7 +415,6 @@ What courses should I take each quarter for the [MMC]?
 How many classes do I have to take for [MMC]?
 What is the total number of classes needed to graduate in [MMC]?
 How do I declare [MMC] concentration?
-What are the required courses for the [MMC]?
 Who are the minor advisors for [MMC]?
 Who can I contact to get more information about the [MMC]?
 Who can I contact if I have questions about [MMC]?
@@ -474,7 +423,6 @@ Where can I get the flowchart for [MMC]?
 What are the GE area required for [MMC]?
 What are the undergraduate courses for [MMC]?
 What are the graduate courses for [MMC]?
-How many courses are required for [MMC]?
 How many GE areas have to be completed for [MMC]?
 What minor would make more sense with [MMC]
 "At best, how long last [MMC]?"
@@ -482,44 +430,8 @@ How many years are necessary to graduate from [MMC]?
 What are the tech electives for [MMC]?
 What courses are electives for [MMC]?
 What electives can I take to get a [MMC]?
-How many GEs do I have to take in [MMC]?
-How many general educations do I have to take in [MMC]?
-How many general education classes do I have to take in [MMC]?
-How many units of electives do I need for [MMC]?
-What is the total number of units of electives needed to graduate in [MMC]?
-How many approved electives do I have to take for the [MMC]?
-What are the approved electives I can take for a [MMC]?
-What are the program educational objectives for the [MMC]?
-What are the learning outcomes of [MMC]?
-What are the learning outcomes for [MMC]?
-What are the [MMC] courses?
-What are the courses required for [MMC]?
-How many courses do we have in [MMC]?
-What are some [MMC] resources that are available?
-What resources are there for [MMC]?
-Where can I get advising for a [MMC]?
-What are the course numbers that are considered independent study in [MMC]?
-How many units does the [MMC] require?
-How many units do I need for a [MMC]?
-What are the steps to apply for the [MMC]?
-How do I apply for a [MMC]?
-What are the required courses for the [MMC]?
-What are the prerequisites for the [MMC]?
-Where can I get the application for the [MMC]?
-Where can I get the flowchart for the [MMC]?
-What courses should I take each quarter for the [MMC]?
-How many classes do I have to take for [MMC]?
-What is the total number of classes needed to graduate in [MMC]?
-How do I declare [MMC] concentration?
-What are the required courses for the [MMC]?
-Who are the minor advisors for [MMC]?
-Who can I contact to get more information about the [MMC]?
-Who can I contact if I have questions about [MMC]?
-Who will help me if I have doubts about [MMC]?
-Where can I get the flowchart for [MMC]?
 What courses are credit not allowed for [MMC]?
 What are the program objectives of [MMC]?
-What are the learning outcomes of [MMC]?
 How many people are in the classes for [MMC]?
 Who accredits the [MMC]?
 What are the prerequisites for [MMC]?
@@ -533,86 +445,12 @@ How many students take [MMC]?
 Will [MMC] help me get a job?
 How many classes would I have to take to get a Minor in [MMC]?
 How do I learn more about [MMC]?
-How many GEs do I have to take in [MMC]?
-How many general educations do I have to take in [MMC]?
-How many general education classes do I have to take in [MMC]?
-How many units of electives do I need for [MMC]?
-What is the total number of units of electives needed to graduate in [MMC]?
-How many approved electives do I have to take for the [MMC]?
-What are the approved electives I can take for a [MMC]?
-What are the program educational objectives for the [MMC]?
-What are the learning outcomes of [MMC]?
-What are the learning outcomes for [MMC]?
-What are the [MMC] courses?
-What are the courses required for [MMC]?
-How many courses do we have in [MMC]?
-What are some [MMC] resources that are available?
-What resources are there for [MMC]?
-Where can I get advising for a [MMC]?
-What are the course numbers that are considered independent study in [MMC]?
-How many units does the [MMC] require?
-How many units do I need for a [MMC]?
-What are the steps to apply for the [MMC]?
-How do I apply for a [MMC]?
-What are the required courses for the [MMC]?
-What are the prerequisites for the [MMC]?
-Where can I get the application for the [MMC]?
-Where can I get the flowchart for the [MMC]?
-What courses should I take each quarter for the [MMC]?
-How many classes do I have to take for [MMC]?
-What is the total number of classes needed to graduate in [MMC]?
-How do I declare [MMC] concentration?
-What are the required courses for the [MMC]?
-Who are the minor advisors for [MMC]?
-Who can I contact to get more information about the [MMC]?
-Who can I contact if I have questions about [MMC]?
-Who will help me if I have doubts about [MMC]?
-Where can I get the flowchart for [MMC]?
-How many GEs do I have to take in [MMC]?
-How many general educations do I have to take in [MMC]?
-How many general education classes do I have to take in [MMC]?
-How many units of electives do I need for [MMC]?
-What is the total number of units of electives needed to graduate in [MMC]?
-How many approved electives do I have to take for the [MMC]?
-What are the approved electives I can take for a [MMC]?
-What are the program educational objectives for the [MMC]?
-What are the learning outcomes of [MMC]?
-What are the learning outcomes for [MMC]?
-What are the [MMC] courses?
-What are the courses required for [MMC]?
-How many courses do we have in [MMC]?
-What are some [MMC] resources that are available?
-What resources are there for [MMC]?
-Where can I get advising for a [MMC]?
-What are the course numbers that are considered independent study in [MMC]?
-How many units does the [MMC] require?
-How many units do I need for a [MMC]?
-What are the steps to apply for the [MMC]?
-How do I apply for a [MMC]?
-What are the required courses for the [MMC]?
-What are the prerequisites for the [MMC]?
-Where can I get the application for the [MMC]?
-Where can I get the flowchart for the [MMC]?
-What courses should I take each quarter for the [MMC]?
-How many classes do I have to take for [MMC]?
-What is the total number of classes needed to graduate in [MMC]?
-How do I declare [MMC] concentration?
-What are the required courses for the [MMC]?
-Who are the minor advisors for [MMC]?
-Who can I contact to get more information about the [MMC]?
-Who can I contact if I have questions about [MMC]?
-Who will help me if I have doubts about [MMC]?
-Where can I get the flowchart for [MMC]?
 Which classes are crosslisted in [DEPT]?
 What [DEPT] courses are required?
 What classes are required from [DEPT]?
 How many [DEPT] courses are required?
 How many courses from [DEPT] are required?
 How many classes of [DEPT] do I have to complete?
-What clubs does the [DEPT] department offer?
-How many clubs are in the [DEPT] department?
-What types of clubs does the [DEPT] department offer?
-How do you sign up to be a [DEPT] tutor?
 What clubs does the [DEPT] department offer?
 How many clubs are in the [DEPT] department?
 What types of clubs does the [DEPT] department offer?
@@ -634,24 +472,14 @@ How many people follow the [CLUB] club's Facebook page?
 Are there any new posts on the [CLUB] club's Facebook page?
 What is the next event for [CLUB]?
 When is the next event for [CLUB]?
-How many people follow the [CLUB] club's Facebook page?
-What is the next event for [CLUB]?
-When is the next event for [CLUB]?
-Who are the officers for [CLUB] club?
 Who are the officers for [CLUB] club?
 When are the meetings for [CLUB] club?
-When are the meetings for [CLUB] club?
-When is the next meeting for [CLUB] club?
 When is the next meeting for [CLUB] club?
 Where is [CLUB] located?
-Where is [CLUB] located?
-Does [CLUB] have their own room? (No.
+Does [CLUB] have their own room?
 What college is affiliated with the [CLUB] club?
 What are some past events of the [CLUB] club?
-What are some past events of the [CLUB] club?
 What was the last event of the [CLUB] club?
-What was the last event of the [CLUB] club?
-When was the last event of [CLUB] club?
 When was the last event of [CLUB] club?
 Who is the president of the [CLUB] club?
 Who is the vice president of the [CLUB] club?
@@ -662,13 +490,9 @@ What is the phone number of the President of the [CLUB] club?
 What is the phone number of the Advisor of the [CLUB] club?
 How many people posted on the [CLUB] club's Facebook page in the past 30 days?
 How many people joined the [CLUB] club's Facebook page in the past 30 days?
-How many people posted on the [CLUB] club's Facebook page in the past 30 days?
-How many people joined the [CLUB] club's Facebook page in the past 30 days?
 What resources are used by the [CLUB] club?
 How many followers does the [CLUB] club's Instagram account have?
 How many accounts does the [CLUB]'s Instagram follow?
-How many followers does the [CLUB] club's Instagram account have?
-When was the [CLUB] established?
 When was the [CLUB] established?
 Does the [CLUB] have an office?
 Where is the office of the [CLUB]?
@@ -677,63 +501,7 @@ How many teams does the [CLUB] have?
 Where will the next event of the [CLUB] be held?
 When will the next event of the [CLUB] be held?
 How many events does the [CLUB] have next week?
-Who is the advisor of the [CLUB] club?
-What is the email of the President of the [CLUB] club?
-What type of club is the [CLUB] club?
-What is the email for the advisor of the [CLUB] club?
-What is the [CLUB] club?
-What is the homepage of the [CLUB] club?
-What is the box number of the [CLUB] club?
-What is the email for the [CLUB] club?
-What are the social media accounts for the [CLUB] club?
-How many people follow the [CLUB] club's Facebook page?
-Are there any new posts on the [CLUB] club's Facebook page?
-What is the next event for [CLUB]?
-When is the next event for [CLUB]?
-How many people follow the [CLUB] club's Facebook page?
-What is the next event for [CLUB]?
-When is the next event for [CLUB]?
-Who are the officers for [CLUB] club?
-Who are the officers for [CLUB] club?
-When are the meetings for [CLUB] club?
-When are the meetings for [CLUB] club?
-When is the next meeting for [CLUB] club?
-When is the next meeting for [CLUB] club?
-Where is [CLUB] located?
-Where is [CLUB] located?
-Does [CLUB] have their own room? (No.
-What college is affiliated with the [CLUB] club?
-What are some past events of the [CLUB] club?
-What are some past events of the [CLUB] club?
-What was the last event of the [CLUB] club?
-What was the last event of the [CLUB] club?
-When was the last event of [CLUB] club?
-When was the last event of [CLUB] club?
-Who is the president of the [CLUB] club?
-Who is the vice president of the [CLUB] club?
-Who is the secretary of the [CLUB] club?
-Who is the treasurer of the [CLUB] club?
-How can I contact [CLUB]?
-What is the phone number of the President of the [CLUB] club?
-What is the phone number of the Advisor of the [CLUB] club?
-How many people posted on the [CLUB] club's Facebook page in the past 30 days?
-How many people joined the [CLUB] club's Facebook page in the past 30 days?
-How many people posted on the [CLUB] club's Facebook page in the past 30 days?
-How many people joined the [CLUB] club's Facebook page in the past 30 days?
-What resources are used by the [CLUB] club?
-How many followers does the [CLUB] club's Instagram account have?
-How many accounts does the [CLUB]'s Instagram follow?
-How many followers does the [CLUB] club's Instagram account have?
-When was the [CLUB] established?
-When was the [CLUB] established?
-Does the [CLUB] have an office?
-Where is the office of the [CLUB]?
-How many officers does the [CLUB] have?
-How many teams does the [CLUB] have?
-Where will the next event of the [CLUB] be held?
-When will the next event of the [CLUB] be held?
 What is the next event of the [CLUB]?
-How many events does the [CLUB] have next week?
 What is the website link for [CLUB]?
 Is there a website for [CLUB]?
 How do I learn more about [CLUB]?
