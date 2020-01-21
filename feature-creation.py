@@ -39,7 +39,7 @@ def build_question_classifier():
     """
 
     # READ QUESTIONS
-    questions = pd.read_csv('questions.csv')
+    questions = pd.read_csv('question_set_clean.csv')
     questions['features'] = questions['questionFormat'].apply(get_question_features)
     question_features = questions['features'].values.tolist()
 
@@ -85,7 +85,7 @@ def classify_question(test, overall_features, classifier):
     return classifier.predict(test_vector)[0]
 
 
-test = "Who is teaching [COURSE_NUM]?"
+test = "Who is teaching [COURSE]?"
 classifier, overall_features = build_question_classifier()
 match = classify_question(test, overall_features, classifier)
 print(match)
