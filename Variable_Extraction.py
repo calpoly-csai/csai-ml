@@ -24,7 +24,7 @@ import sys
 from nltk.tokenize import sent_tokenize, word_tokenize
 from gensim.models import Word2Vec
 
-from gen_data import Gen_Data 
+#from gen_data import Gen_Data 
 
 class Variable_Extraction:
     def __init__(self):

@@ -5,6 +5,7 @@ import numpy as np
 import sklearn
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
 
 def get_question_features(question):
     """
@@ -32,7 +33,7 @@ def get_question_features(question):
         features[word] = 30
     return features
 
-def build_question_classifier():
+def build_question_classifier(questions):
     """
     Build overall feature set for each question based on feature vectors of individual questions.
     Train KNN classification model with overall feature set.
@@ -85,7 +86,10 @@ def classify_question(test, overall_features, classifier):
     return classifier.predict(test_vector)[0]
 
 
-test = "Who is teaching [COURSE]?"
-classifier, overall_features = build_question_classifier()
-match = classify_question(test, overall_features, classifier)
-print(match)
+
+
+questions = pd.read_csv('question_set_clean.csv')
+classifier, features = build_question_classifier(questions)
+test = "Who teaches [COURSE]?"
+print(classify_question(test, features, classifier))
+
