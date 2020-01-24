@@ -180,7 +180,7 @@ Who are the professors teaching [COURSE] next quarter?
 Can I get tutoring in [COURSE]?
 Is tutoring available for [COURSE]?
 Is tutoring provided for [COURSE]?
-During Stat tutoring, can I get help with [COURSE]
+"During Stat tutoring, can I get help with [COURSE]"
 What courses is [PROF] teaching this quarter?
 What courses is [PROF] teaching next quarter?
 What is [PROF] schedule like this quarter?
@@ -297,11 +297,11 @@ What is the job title of [PROF]?
 Is [PROF] a lecturer or a professor?
 What is the position of [PROF]?
 What is [PROF]'s job at Cal Poly?
-In the CSSE department, how many faculty members are [PROF]?
+"In the CSSE department, how many faculty members are [PROF]?"
 How many computer science [PROF] are there at Cal Poly?
 Who are the professors with the last name [PROF]?
 Where is [PROF] right now?
-At the moment, where is [PROF]?
+"At the moment, where is [PROF]?"
 Where is [PROF] currently?
 Where is the next place I can find [PROF]?
 When can I next find [PROF] on campus?
@@ -367,7 +367,7 @@ What is the units break down for [MMC] major?
 How many GE units do I need for the [MMC] major?
 How many support units do I need for the [MMC] major?
 How many units do I need for the [MMC] major?
-In order to complete the [MMC] major, how many units will I need?
+"In order to complete the [MMC] major, how many units will I need?"
 How many units do I need for the [MMC] minor?
 How many units does the [MMC] require?
 How many classes per quarter do I have to take for [MMC]?
@@ -425,7 +425,7 @@ What are the undergraduate courses for [MMC]?
 What are the graduate courses for [MMC]?
 How many GE areas have to be completed for [MMC]?
 What minor would make more sense with [MMC]
-At best, how long last [MMC]?
+"At best, how long last [MMC]?"
 How many years are necessary to graduate from [MMC]?
 What are the tech electives for [MMC]?
 What courses are electives for [MMC]?
@@ -518,12 +518,12 @@ Who is the chief contact for [CLUB]?
 Who should I get in touch with for [CLUB]?
 What is the general contact information for [CLUB]?
 Who is the club adviser for [CLUB]?
-What teachers teach a class in [LOCATION]?
-Which classes are taught in [LOCATION]?
-Do any teachers have office hours in [LOCATION]?
-What professors have offices in [LOCATION]?
-Which professors have office hours in [LOCATION]?
-Who are the professors with office hours in [LOCATION]?
-Whose office is in [LOCATION]?
-Which professors have offices in building [LOCATION]?
-How many professors have offices in building [LOCATION]?
+What teachers teach a class in [SECRET_HIDEOUT]?
+Which classes are taught in [SECRET_HIDEOUT]?
+Do any teachers have office hours in [SECRET_HIDEOUT]?
+What professors have offices in [SECRET_HIDEOUT]?
+Which professors have office hours in [SECRET_HIDEOUT]?
+Who are the professors with office hours in [SECRET_HIDEOUT]?
+Whose office is in [SECRET_HIDEOUT]?
+Which professors have offices in building [SECRET_HIDEOUT]?
+How many professors have offices in building [SECRET_HIDEOUT]?

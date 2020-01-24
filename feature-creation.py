@@ -6,6 +6,7 @@ import sklearn
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
+from sys import argv
 
 def get_question_features(question):
     """
@@ -27,7 +28,7 @@ def get_question_features(question):
     filtered_words = [porter_stemmer.stem(word) for word in words]
 
     # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
-    features[filtered_words[0]] = 30
+    features[filtered_words[0]] = 60
     filtered_words = [word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
     for word in filtered_words:
         features[word] = 30
@@ -82,7 +83,9 @@ def classify_question(test, overall_features, classifier):
     test_vector = test_vector.reshape(1, len(test_vector))
     min_dist = np.min(classifier.kneighbors(test_vector, n_neighbors=1)[0])
     if min_dist > 150:
+        print(min_dist)
         return "I don't think that's a Statistics related question! Try asking something about the STAT curriculum."
+    print(min_dist)
     return classifier.predict(test_vector)[0]
 
 
@@ -90,6 +93,7 @@ def classify_question(test, overall_features, classifier):
 
 questions = pd.read_csv('question_set_clean.csv')
 classifier, features = build_question_classifier(questions)
-test = "Who teaches [COURSE]?"
-print(classify_question(test, features, classifier))
+while True:
+    test = input("Ask me a question: ")
+    print(classify_question(test, features, classifier))
 
