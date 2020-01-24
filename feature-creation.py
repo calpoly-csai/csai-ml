@@ -5,6 +5,8 @@ import numpy as np
 import sklearn
 from sklearn import preprocessing
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sys import argv
 
 def get_question_features(question):
     """
@@ -26,20 +28,20 @@ def get_question_features(question):
     filtered_words = [porter_stemmer.stem(word) for word in words]
 
     # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
-    features[filtered_words[0]] = 30
+    features[filtered_words[0]] = 60
     filtered_words = [word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
     for word in filtered_words:
         features[word] = 30
     return features
 
-def build_question_classifier():
+def build_question_classifier(questions):
     """
     Build overall feature set for each question based on feature vectors of individual questions.
     Train KNN classification model with overall feature set.
     """
 
     # READ QUESTIONS
-    questions = pd.read_csv('questions.csv')
+    questions = pd.read_csv('question_set_clean.csv')
     questions['features'] = questions['questionFormat'].apply(get_question_features)
     question_features = questions['features'].values.tolist()
 
@@ -85,7 +87,11 @@ def classify_question(test, overall_features, classifier):
     return classifier.predict(test_vector)[0]
 
 
-test = "Who is teaching [COURSE_NUM]?"
-classifier, overall_features = build_question_classifier()
-match = classify_question(test, overall_features, classifier)
-print(match)
+
+
+questions = pd.read_csv('question_set_clean.csv')
+classifier, features = build_question_classifier(questions)
+while True:
+    test = input("Ask me a question: ")
+    print(classify_question(test, features, classifier))
+
