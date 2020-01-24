@@ -83,9 +83,7 @@ def classify_question(test, overall_features, classifier):
     test_vector = test_vector.reshape(1, len(test_vector))
     min_dist = np.min(classifier.kneighbors(test_vector, n_neighbors=1)[0])
     if min_dist > 150:
-        print(min_dist)
         return "I don't think that's a Statistics related question! Try asking something about the STAT curriculum."
-    print(min_dist)
     return classifier.predict(test_vector)[0]
 
 
