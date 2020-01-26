@@ -2,8 +2,10 @@ import re
 import nltk
 import spacy
 import numpy as np
-import sklearn
+import sklearn.neighbors
 import pandas as pd
+
+# TODO: move the functionality in this module into class(es), so that it can be more easily used as a dependency
 
 # LOAD SPACY ENGLISH NLP MODEL
 nlp = spacy.load('en_core_web_sm')
@@ -54,6 +56,11 @@ def get_question_features(question):
 
     return features
 
+# EXTRACTS THE MAIN VERB FROM A QUESTION USING THE DEPENDENCY TREE
+# THE MAIN VERB OF THE QUESTION SHOULD BE THE ROOT OF THE TREE
+# Note: this method of extracting the main verb is not perfect, but
+# for single sentence questions that should have no ambiguity about the main verb,
+# it should be sufficient.
 def extract_main_verb(question):
     doc = nlp(question)
     sents = list(doc.sents)
@@ -137,7 +144,6 @@ print(get_question_features("Where is Franz Kurfess' office?"))
 print(get_question_features("This is a normal sentence."))
 print(get_question_features("[COURSE] is taught by who?"))
 print(get_question_features("How do I register for classes?"))
-print(nltk.pos_tag(nltk.word_tokenize("Whose is the person whose office hours are between 1 and 2 pm?")))
 
 while True:
     test = input("Ask me a question: ")
