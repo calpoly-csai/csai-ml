@@ -1,12 +1,13 @@
 import re
 import nltk
-import pandas as pd
+import spacy
 import numpy as np
 import sklearn
-from sklearn import preprocessing
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import train_test_split
-from sys import argv
+import pandas as pd
+
+# LOAD SPACY ENGLISH NLP MODEL
+nlp = spacy.load('en_core_web_sm')
+
 
 def get_question_features(question):
     """
@@ -14,25 +15,61 @@ def get_question_features(question):
     """
     features = {}
 
+    # Extract the main verb from the question before additional processing
+    main_verb = str(extract_main_verb(question))
+
     # ADD ALL VARIABLES TO THE FEATURE DICT WITH A WEIGHT OF 90
     matches = re.findall(r'(\[(.*?)\])', question)
     for match in matches:
         question = question.replace(match[0], '')
         features[match[0]] = 90
+
     question = re.sub('[^a-zA-Z0-9]', ' ', question)
+
 
     # PRE-PROCESSING: TOKENIZE SENTENCE, AND LOWER AND STEM EACH WORD
     words = nltk.word_tokenize(question)
     words = [word.lower() for word in words if '[' and ']' not in word]
+
     porter_stemmer = nltk.stem.porter.PorterStemmer()
     filtered_words = [porter_stemmer.stem(word) for word in words]
 
+    # ADD THE STEMMED MAIN VERB TO THE FEATURE SET WITH A WEIGHT OF 60
+    stemmed_main_verb = porter_stemmer.stem(main_verb)
+    features[stemmed_main_verb] = 60
+
+    # TAG WORDS' PART OF SPEECH, AND ADD ALL WH WORDS TO FEATURE DICT
+    # WITH WEIGHT 60
+    words_pos = nltk.pos_tag(filtered_words)
+    for word_pos in words_pos:
+        if is_wh_word(word_pos[1]):
+            features[word_pos[0]] = 60
+
     # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
-    features[filtered_words[0]] = 60
     filtered_words = [word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
     for word in filtered_words:
-        features[word] = 30
+            # ADD EACH WORD NOT ALREADY PRESENT IN FEATURE SET WITH WEIGHT OF 30
+            if word not in features:
+                features[word] = 30
+
     return features
+
+def extract_main_verb(question):
+    doc = nlp(question)
+    sents = list(doc.sents)
+    if len(sents) == 0:
+        raise ValueError("Empty question")
+
+    return sents[0].root
+
+
+# The possible WH word tags returned through NLTK part of speech tagging
+WH_WORDS = {'WDT', 'WP', 'WP$', 'WRB'}
+
+
+def is_wh_word(pos):
+    return pos in WH_WORDS
+
 
 def build_question_classifier(questions):
     """
@@ -44,6 +81,7 @@ def build_question_classifier(questions):
     questions = pd.read_csv('question_set_clean.csv')
     questions['features'] = questions['questionFormat'].apply(get_question_features)
     question_features = questions['features'].values.tolist()
+
 
     # BUILD OVERALL FEATURE SET FROM INDIVIDUAL QUESTION FEATURE VECTORS
     overall_features = {}
@@ -87,10 +125,20 @@ def classify_question(test, overall_features, classifier):
     return classifier.predict(test_vector)[0]
 
 
-
-
 questions = pd.read_csv('question_set_clean.csv')
 classifier, features = build_question_classifier(questions)
+print(get_question_features("What are Foaad Khosmood's office hours?"))
+print(get_question_features("Does Foaad Khosmood have office hours?"))
+print(get_question_features("Who teaches CSC 480"))
+print(get_question_features("CSC 480 is taught by who?"))
+print(get_question_features("Khosmood teaches CSC 480?"))
+print(get_question_features("Whose office hours are between 1 and 2 pm?"))
+print(get_question_features("Where is Franz Kurfess' office?"))
+print(get_question_features("This is a normal sentence."))
+print(get_question_features("[COURSE] is taught by who?"))
+print(get_question_features("How do I register for classes?"))
+print(nltk.pos_tag(nltk.word_tokenize("Whose is the person whose office hours are between 1 and 2 pm?")))
+
 while True:
     test = input("Ask me a question: ")
     print(classify_question(test, features, classifier))
