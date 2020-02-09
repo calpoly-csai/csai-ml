@@ -6,6 +6,7 @@ import sklearn.neighbors
 import pandas as pd
 import sys
 
+
 # TODO: move the functionality in this module into class(es), so that it can be more easily used as a dependency
 
 
@@ -19,7 +20,6 @@ class QuestionClassifier:
         self.overall_features = {}
         self.classifier = None
         self.build_question_classifier()
-
 
     def get_question_features(self, question):
         print("using new algorithm")
@@ -43,11 +43,11 @@ class QuestionClassifier:
         words = nltk.word_tokenize(question)
         words = [word.lower() for word in words if '[' and ']' not in word]
 
-        porter_stemmer = nltk.stem.porter.PorterStemmer()
-        filtered_words = [porter_stemmer.stem(word) for word in words]
+        lemmatizer = nltk.stem.WordNetLemmatizer()
+        filtered_words = [lemmatizer.lemmatize(word) for word in words]
 
         # ADD THE STEMMED MAIN VERB TO THE FEATURE SET WITH A WEIGHT OF 60
-        stemmed_main_verb = porter_stemmer.stem(main_verb)
+        stemmed_main_verb = lemmatizer.lemmatize(main_verb)
         features[stemmed_main_verb] = 60
 
         # TAG WORDS' PART OF SPEECH, AND ADD ALL WH WORDS TO FEATURE DICT
@@ -69,8 +69,8 @@ class QuestionClassifier:
     def get_question_features_old_algorithm(self, question):
         print("using old algorithm....")
         """
-            Method to extract features from each individual question.
-            """
+        Method to extract features from each individual question.
+        """
         features = {}
 
         # ADD ALL VARIABLES TO THE FEATURE DICT WITH A WEIGHT OF 90
@@ -189,11 +189,10 @@ def main():
     print(classifier.get_question_features("[COURSE] is taught by who?"))
     print(classifier.get_question_features("How do I register for classes?"))
 
-
-
     while True:
         test = input("Ask me a question: ")
         print(classifier.classify_question(test))
+
 
 if __name__ == "__main__":
     main()

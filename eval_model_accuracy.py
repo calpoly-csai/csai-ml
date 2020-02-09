@@ -1,6 +1,7 @@
 import Generate_Data
 from question_classifier import QuestionClassifier
 
+
 def eval_model_accuracy():
     question_generator = Generate_Data.Gen_Data()
     generated_data, _ = question_generator.generate()
@@ -27,6 +28,6 @@ def eval_model_accuracy():
     print("Accuracy: {}".format(float(total) / samples))
     print(generated_data)
 
+
 if __name__ == "__main__":
     eval_model_accuracy()
-
