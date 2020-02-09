@@ -43,11 +43,10 @@ class QuestionClassifier:
         words = nltk.word_tokenize(question)
         words = [word.lower() for word in words if '[' and ']' not in word]
 
-        porter_stemmer = nltk.stem.porter.PorterStemmer()
-        filtered_words = [porter_stemmer.stem(word) for word in words]
+        filtered_words = [self.nlp(word)[0].lemma_ for word in words]
 
-        # ADD THE STEMMED MAIN VERB TO THE FEATURE SET WITH A WEIGHT OF 60
-        stemmed_main_verb = porter_stemmer.stem(main_verb)
+        # ADD THE LEMMATIZED MAIN VERB TO THE FEATURE SET WITH A WEIGHT OF 60
+        stemmed_main_verb = self.nlp(main_verb)[0]
         features[stemmed_main_verb] = 60
 
         # TAG WORDS' PART OF SPEECH, AND ADD ALL WH WORDS TO FEATURE DICT
