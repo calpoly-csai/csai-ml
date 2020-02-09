@@ -43,7 +43,7 @@ class QuestionClassifier:
         words = nltk.word_tokenize(question)
         words = [word.lower() for word in words if '[' and ']' not in word]
 
-        filtered_words = [self.nlp(word)[0].lemma_ for word in words]
+        filtered_words = self.get_lemmas(words)
 
         # ADD THE LEMMATIZED MAIN VERB TO THE FEATURE SET WITH A WEIGHT OF 60
         stemmed_main_verb = self.nlp(main_verb)[0]
@@ -82,8 +82,7 @@ class QuestionClassifier:
         # PRE-PROCESSING: TOKENIZE SENTENCE, AND LOWER AND STEM EACH WORD
         words = nltk.word_tokenize(question)
         words = [word.lower() for word in words if '[' and ']' not in word]
-        porter_stemmer = nltk.stem.porter.PorterStemmer()
-        filtered_words = [porter_stemmer.stem(word) for word in words]
+        filtered_words = self.get_lemmas(words)
 
         # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
         features[filtered_words[0]] = 60
@@ -105,6 +104,9 @@ class QuestionClassifier:
             raise ValueError("Empty question")
 
         return sents[0].root
+
+    def get_lemmas(self, words):
+        return [self.nlp(word)[0].lemma_ for word in words]
 
     def is_wh_word(self, pos):
         return pos in self.WH_WORDS
