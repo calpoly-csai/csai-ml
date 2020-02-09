@@ -160,8 +160,7 @@ class QuestionClassifier:
         words = nltk.word_tokenize(question)
         words = [word.lower() for word in words if '[' and ']' not in word]
 
-        porter_stemmer = nltk.stem.porter.PorterStemmer()
-        filtered_words = [porter_stemmer.stem(word) for word in words]
+        filtered_words = self.get_lemmas(words)
 
         question_tags = nltk.pos_tag(filtered_words)
         question_tags = [
