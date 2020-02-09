@@ -20,9 +20,8 @@ class QuestionClassifier:
         self.classifier = None
         self.build_question_classifier()
 
-
     def get_question_features(self, question):
-        print("using new algorithm")
+        # print("using new algorithm")
         """
         Method to extract features from each individual question.
         """
@@ -57,7 +56,8 @@ class QuestionClassifier:
                 features[word_pos[0]] = 60
 
         # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
-        filtered_words = [word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
+        filtered_words = [
+            word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
         for word in filtered_words:
             # ADD EACH WORD NOT ALREADY PRESENT IN FEATURE SET WITH WEIGHT OF 30
             if word not in features:
@@ -86,7 +86,8 @@ class QuestionClassifier:
 
         # ADD FIRST WORD AND NON-STOP WORDS TO FEATURE DICT
         features[filtered_words[0]] = 60
-        filtered_words = [word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
+        filtered_words = [
+            word for word in filtered_words if word not in nltk.corpus.stopwords.words('english')]
         for word in filtered_words:
             features[word] = 30
 
@@ -120,9 +121,11 @@ class QuestionClassifier:
         # READ QUESTIONS
         questions = pd.read_csv('question_set_clean.csv')
         if self.use_new:
-            questions['features'] = questions['questionFormat'].apply(self.get_question_features)
+            questions['features'] = questions['questionFormat'].apply(
+                self.get_question_features)
         else:
-            questions['features'] = questions['questionFormat'].apply(self.get_question_features_old_algorithm)
+            questions['features'] = questions['questionFormat'].apply(
+                self.get_question_features_old_algorithm)
 
         question_features = questions['features'].values.tolist()
 
@@ -145,6 +148,54 @@ class QuestionClassifier:
         self.classifier = sklearn.neighbors.KNeighborsClassifier(n_neighbors=1)
         self.classifier.fit(vectors, y_train)
 
+    def filterWHTags(self, question):
+        # ADD ALL VARIABLES TO THE FEATURE DICT WITH A WEIGHT OF 90
+        matches = re.findall(r'(\[(.*?)\])', question)
+        for match in matches:
+            question = question.replace(match[0], '')
+
+        question = re.sub('[^a-zA-Z0-9]', ' ', question)
+
+        # PRE-PROCESSING: TOKENIZE SENTENCE, AND LOWER AND STEM EACH WORD
+        words = nltk.word_tokenize(question)
+        words = [word.lower() for word in words if '[' and ']' not in word]
+
+        porter_stemmer = nltk.stem.porter.PorterStemmer()
+        filtered_words = [porter_stemmer.stem(word) for word in words]
+
+        question_tags = nltk.pos_tag(filtered_words)
+        question_tags = [
+            tag for tag in question_tags if self.is_wh_word(tag[1])]
+        return question_tags
+
+    def validate_WH(self, test_question, predicted_question):
+        """
+        Assumes that only 1 WH word exists
+        Returns True if the WH word in the test question equals the
+        WH word in the predicted question
+        """
+
+        test_tags = self.filterWHTags(test_question)
+        predicted_tags = self.filterWHTags(predicted_question)
+
+        # Uncomment these lines below to see
+        # print("Test")
+        # print(test_tags)
+        # print()
+
+        # print("Predicted")
+        # print(predicted_tags)
+        # print()
+
+        # Compares all WH words in the tags array and returns False if one doesn't match
+        min_tag_len = min(len(test_tags), len(predicted_tags))
+        wh_match = True
+        i = 0
+        while (wh_match and i < min_tag_len):
+            wh_match = wh_match and (test_tags[0][i] == predicted_tags[0][i])
+            i += 1
+        return wh_match
+
     def classify_question(self, test_question):
         """
         Match a user query with a question in the database based on the classifier we trained and overall features we calculated.
@@ -156,7 +207,8 @@ class QuestionClassifier:
         if self.use_new:
             test_features = self.get_question_features(test_question)
         else:
-            test_features = self.get_question_features_old_algorithm(test_question)
+            test_features = self.get_question_features_old_algorithm(
+                test_question)
 
         test_vector = dict.fromkeys(self.overall_features, 0)
         for key in test_features:
@@ -167,34 +219,47 @@ class QuestionClassifier:
                 test_vector["not related"] += 250
         test_vector = np.array(list(test_vector.values()))
         test_vector = test_vector.reshape(1, len(test_vector))
-        min_dist = np.min(self.classifier.kneighbors(test_vector, n_neighbors=1)[0])
+        min_dist = np.min(self.classifier.kneighbors(
+            test_vector, n_neighbors=1)[0])
         if min_dist > 150:
             return "I don't think that's a Statistics related question! Try asking something about the STAT curriculum."
-        return self.classifier.predict(test_vector)[0]
+
+        predicted_question = self.classifier.predict(test_vector)[0]
+
+        wh_words_match = self.validate_WH(test_question, predicted_question)
+        # Uncomment to print whether the WH words match
+        # print("WH Words Match?:", wh_words_match)
+
+        if (not wh_words_match):
+            return "WH Words Don't Match"
+
+        return predicted_question
 
 
 def main():
-    use_new = False
-    print(sys.argv)
-    if len(sys.argv) > 1 and sys.argv[1] == 'new':
-        use_new = True
-    classifier = QuestionClassifier('question_set_clean.csv', use_new=use_new)
-    print(classifier.get_question_features("What are Foaad Khosmood's office hours?"))
-    print(classifier.get_question_features("Does Foaad Khosmood have office hours?"))
-    print(classifier.get_question_features("Who teaches CSC 480"))
-    print(classifier.get_question_features("CSC 480 is taught by who?"))
-    print(classifier.get_question_features("Khosmood teaches CSC 480?"))
-    print(classifier.get_question_features("Whose office hours are between 1 and 2 pm?"))
-    print(classifier.get_question_features("Where is Franz Kurfess' office?"))
-    print(classifier.get_question_features("This is a normal sentence."))
-    print(classifier.get_question_features("[COURSE] is taught by who?"))
-    print(classifier.get_question_features("How do I register for classes?"))
-
-
+    # use_new = False
+    # print(sys.argv)
+    # if len(sys.argv) > 1 and sys.argv[1] == 'new':
+    #     use_new = True
+    classifier = QuestionClassifier('question_set_clean.csv', use_new=True)
+    # print(classifier.get_question_features(
+    #     "What are Foaad Khosmood's office hours?"))
+    # print(classifier.get_question_features(
+    #     "Does Foaad Khosmood have office hours?"))
+    # print(classifier.get_question_features("Who teaches CSC 480"))
+    # print(classifier.get_question_features("CSC 480 is taught by who?"))
+    # print(classifier.get_question_features("Khosmood teaches CSC 480?"))
+    # print(classifier.get_question_features(
+    #     "Whose office hours are between 1 and 2 pm?"))
+    # print(classifier.get_question_features("Where is Franz Kurfess' office?"))
+    # print(classifier.get_question_features("This is a normal sentence."))
+    # print(classifier.get_question_features("[COURSE] is taught by who?"))
+    # print(classifier.get_question_features("How do I register for classes?"))
 
     while True:
         test = input("Ask me a question: ")
         print(classifier.classify_question(test))
+
 
 if __name__ == "__main__":
     main()
