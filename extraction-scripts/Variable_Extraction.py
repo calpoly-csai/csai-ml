@@ -24,8 +24,6 @@ import sys
 from nltk.tokenize import sent_tokenize, word_tokenize
 from gensim.models import Word2Vec
 
-#from gen_data import Gen_Data 
-
 class Variable_Extraction:
     def __init__(self):
         self.titles = {"professor", "doctor", "dr", "prof", "mr", "mister", "mrs", "miss", "ms", "instructor"}  
@@ -37,12 +35,13 @@ class Variable_Extraction:
     def add_cross_name(self, temp_database, word_object):
         if word_object.name not in self.database:
             self.database[word_object.name] = word_object
+            self.database[word_object.name.lower()] = word_object
 
         if not(isinstance(word_object, Professor)):
             for word in word_object.crosslisted:
                 if word not in self.database:
+                    self.database[word.lower()] = word_object
                     self.database[word] = word_object
-
     def extract_variables(self, sent):
         
         prefix = ""
@@ -56,6 +55,7 @@ class Variable_Extraction:
 
         nlp = spacy.load('en_core_web_sm')
         
+        print(self.database)
         for tok in nlp(sent):
             print("\nCurr Word: ", tok.text)
             print("Dep: ", tok.dep_)
