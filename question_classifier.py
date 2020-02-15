@@ -191,7 +191,7 @@ class QuestionClassifier:
         wh_match = True
         i = 0
         while (wh_match and i < min_tag_len):
-            wh_match = wh_match and (test_tags[0][i] == predicted_tags[0][i])
+            wh_match = wh_match and (test_tags[i][0] == predicted_tags[i][0])
             i += 1
         return wh_match
 
