@@ -35,8 +35,7 @@ class NIMBUS_NLP:
         entity, normalized_sentence = variable_extraction.\
                                         extract_variables(input_question)
 
-        classifier = QuestionClassifier('question_set_clean.csv', 
-                                        use_new=True)
+        classifier = TrainQuestionClassifier(save_model=False)
         answer = classifier.classify_question(normalized_sentence)
 
         return_tuple = (input_question, normalized_sentence,

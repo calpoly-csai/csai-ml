@@ -5,20 +5,31 @@ import numpy as np
 import sklearn.neighbors
 import pandas as pd
 import sys
+from save_and_load_model import save_model, load_latest_model
 
 # TODO: move the functionality in this module into class(es), so that it can be more easily used as a dependency
 
 
-class QuestionClassifier:
-    def __init__(self, question_data_file_name, use_new=False):
-        self.use_new = use_new
+class TrainQuestionClassifier:
+    def __init__(self, question_data_file_name=None, save_model=False):
+        self.save_model = save_model
         self.nlp = spacy.load('en_core_web_sm')
-        self.questions = pd.read_csv(question_data_file_name)
+        if(question_data_file_name):
+            self.questions = pd.read_csv(question_data_file_name)
         # The possible WH word tags returned through NLTK part of speech tagging
         self.WH_WORDS = {'WDT', 'WP', 'WP$', 'WRB'}
         self.overall_features = {}
         self.classifier = None
-        self.build_question_classifier()
+        if(save_model == True):
+            self.build_question_classifier()
+        else:
+            self.load_latest_classifier()
+
+
+    def load_latest_classifier(self):
+        self.classifier = load_latest_model()
+
+
 
     def get_question_features(self, question):
         # print("using new algorithm")
@@ -120,12 +131,8 @@ class QuestionClassifier:
 
         # READ QUESTIONS
         questions = pd.read_csv('question_set_clean.csv')
-        if self.use_new:
-            questions['features'] = questions['questionFormat'].apply(
-                self.get_question_features)
-        else:
-            questions['features'] = questions['questionFormat'].apply(
-                self.get_question_features_old_algorithm)
+        questions['features'] = questions['questionFormat'].apply(self.get_question_features)
+        # old alg: questions['features'] = questions['questionFormat'].apply(self.get_question_features_old_algorithm)
 
         question_features = questions['features'].values.tolist()
 
@@ -147,6 +154,8 @@ class QuestionClassifier:
         y_train = np.array(y_train)
         self.classifier = sklearn.neighbors.KNeighborsClassifier(n_neighbors=1)
         self.classifier.fit(vectors, y_train)
+        if (self.save_model == True):
+            save_model(self.classifier, "nlp-model")
 
     def filterWHTags(self, question):
         # ADD ALL VARIABLES TO THE FEATURE DICT WITH A WEIGHT OF 90
@@ -240,7 +249,7 @@ def main():
     # print(sys.argv)
     # if len(sys.argv) > 1 and sys.argv[1] == 'new':
     #     use_new = True
-    classifier = QuestionClassifier('question_set_clean.csv', use_new=True)
+    classifier = TrainQuestionClassifier(save_model=False)
     # print(classifier.get_question_features(
     #     "What are Foaad Khosmood's office hours?"))
     # print(classifier.get_question_features(
