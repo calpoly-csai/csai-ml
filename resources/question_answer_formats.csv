@@ -1,0 +1,550 @@
+questionFormat,answerFormat
+What is [COURSE] about?,[COURSE] is about [COURSE_DESCRIPTION]
+What are the prereqs for [COURSE]?,The prereqs for [COURSE] are: [COURSE-PREREQS].
+Which courses are required to be taken before [COURSE]?,The prereqs for [COURSE] are: [COURSE-PREREQS].
+What courses have [COURSE] as a prereq?,The following courses have [COURSE] as a prereq: [COURSE].
+Which majors require [COURSE]?,[MMC] all require [COURSE]
+Which majors avoid [COURSE]?,[MMC] all do not require [COURSE]
+What are the sections times for [COURSE] next quarter?,There are [NUM_SECTIONS] sections [COURSE] next quarter where the section tims are the following: [COURSE-SECTIONS] 
+What are the sections times for [COURSE] this quarter?,There are [NUM_SECTIONS] sections for [COURSE] this quarter where the section tims are the following: [COURSE-SECTIONS] 
+How many sections of [COURSE] are being offered this quarter?,There are [NUM_SECTIONS] sections of [COURSE] being offered this quarter.
+How many sections of [COURSE] are being offered next quarter?,There are [NUM_SECTIONS] sections of [COURSE] being offered next quarter.
+How many units does [COURSE] count towards?,[COURSE] counts as [COURSE-UNITS] units.
+When is [COURSE] typically offered?,[COURSE] is typically offered during [QUARTER].
+During what quarters is [COURSE] typically offered?,[COURSE] is typically offered during [QUARTER].
+Is [COURSE] going to be offered next quarter?,Y/N: [COURSE] is (not) going to be offered next quarter.
+Is tutuoring offered for [COURSE],Y/N: Tutoring is offered for [COURSE],    (if yes) Here is the tutoring schedule [TUTORING_SCHED]
+Is there any information on [COURSE]?,Sure! Here's some more information on [COURSE]. [COURSE_DESCRIPTION]
+Is [COURSE] currently offered?,Y/N: [COURSE] is currently (not) being taught this quarter.
+Is [COURSE] a 4 unit class?,Y/N: [COURSE] is a [COURSE_UNITS] unit class
+Does [COURSE] have any prerequisites?,Y, the prerequisites for [COURSE] are [COURSE_PREREQS] or N, this course doesn't have any prerequisites
+What terms is [COURSE] typically offered?,[COURSE] is offered in [QUARTER].
+What terms is [COURSE] typically offered?,[COURSE] is offered in [QUARTER].
+Which terms is [COURSE] offered?,[COURSE] is offered in [QUARTER].
+Which terms is [COURSE] offered?,[COURSE] is offered in [QUARTER].
+Does [COURSE] require consent of instructor?,Yes, [COURSE] requires consent of instructor.
+Does [COURSE] require consent of instructor?,Yes, [COURSE] requires consent of instructor.
+Can I get into [COURSE] with instructor's consent?,Yes, [COURSE] can be taken with instructors consent.
+Can I get into [COURSE] with instructor's consent?,Yes, [COURSE] can be taken with instructors consent.
+What are the prerequisites for [COURSE]?,The prerequisites for [COURSE] are [COURSE].
+What are the prerequisites for [COURSE]?,The prerequisites for [COURSE] are [COURSE].
+What classes do I have to take before [COURSE]?,The prerequisites for [COURSE] are [COURSE].
+What classes do I have to take before [COURSE]?,The prerequisites for [COURSE] are [COURSE].
+What are the recommended prerequisites for [COURSE]?,The recommended prerequisites for [COURSE] are [COURSE].
+What are the recommended prerequisites for [COURSE]?,The recommended prerequisites for [COURSE] are [COURSE].
+What classes do I need in order to take [COURSE]?,The recursive prerequisites for [COURSE] are [COURSE].
+Which classes have [COURSE] as a prerequisite?,[COURSE] have [COURSE] as a prerequisite.
+Which classes have [COURSE] as a prerequisite?,[COURSE] have [COURSE] as a prerequisite.
+Does [COURSE] have an upper divisional prerequisite?,Yes, [COURSE] has an upper divisional prerequisite.
+Does [COURSE] have an upper divisional prerequisite?,Yes, [COURSE] has an upper divisional prerequisite.
+Do I need a C- or better in [COURSE] to take any other classes?,Yes, a C- or better in [COURSE] is required to take [COURSE].
+Do I need a C- or better in [COURSE] to take any other classes?,Yes, a C- or better in [COURSE] is required to take [COURSE].
+When do most people take [COURSE]?,Most people take [COURSE] during [QUARTER] of their [CLASS_YEAR] year.
+Is [COURSE] limited in total credit?,[COURSE] is limited in total credit.
+Is [COURSE] limited in total credit?,[COURSE] is limited in total credit.
+Can I select [COURSE] as a tech elective?,Yes, [COURSE] can be selected as a technical elective.
+What is the structure of [COURSE]?,[COURSE] is a [COURSE_LABORLEC] class.
+What is the structure of [COURSE]?,[COURSE] is a [COURSE_LABORLEC] class.
+How many units is [COURSE]?,[COURSE] is worth [COURSE_UNITS] units.
+How many units is [COURSE]?,[COURSE] is worth [COURSE_UNITS] units.
+Is [COURSE] crosslisted in another department?,Yes, [COURSE] is crosslisted in another department.
+Is [COURSE] crosslisted in another department?,Yes, [COURSE] is crosslisted in another department.
+Is [COURSE] credit/no credit grading only?,Yes, [COURSE] is credit/no credit grading only.
+Is [COURSE] credit/no credit grading only?,Yes, [COURSE] is credit/no credit grading only.
+What is [COURSE] about?,[COURSE] covers the following topics:  [COURSE_DESCRIPTION].
+What is [COURSE] about?,[COURSE] covers the following topics:  [COURSE_DESCRIPTION].
+What topics are covered in [COURSE]?,[COURSE] covers the following topics:  [COURSE_DESCRIPTION].
+What topics are covered in [COURSE]?,[COURSE] covers the following topics:  [COURSE_DESCRIPTION].
+What is the course title for [COURSE]?,The course title for [COURSE] is [COURSE].
+What is [COURSE] also called?,[COURSE] is also called [COURSE].
+What is the name of [COURSE]?,The course title for [COURSE] is [COURSE].
+What is the course code for [COURSE]?,The course code for [COURSE] is [COURSE].
+Does [COURSE] include group work?,Yes. [COURSE] includes group work.
+Is [COURSE] project based?,Yes. [COURSE] is project based.
+What class should I take after [COURSE]?,After taking [COURSE] you could take [COURSE].
+What classes build off [COURSE]?,The following classes build off of [COURSE]: [COURSE].
+Which classes are most similar to [COURSE]?,The following classes are most similar to [COURSE]: [COURSE].
+What classes should I take with [COURSE]?,The following classes go well with [COURSE]: [COURSE].
+How many units do I need to take to be considered a [COURSE]?,In order to be considered a [CLASS_YEAR], you have to take [CLASS_YEAR_UNITS].
+Can I take [COURSE] credit no credit?,Yes or No
+Can I take [COURSE] pass-fail?,Yes or No
+Is [COURSE] a required course?,Yes or No
+Do I have to take [COURSE]?,Yes or No
+How many hours a week is [COURSE]?,Number
+How much time is spent in [COURSE] per week?,Number of hours
+How many times is [COURSE] offered per year?,Number
+In how many quarters is [COURSE] offered?,Number
+When is [COURSE] offered?,[QUARTER]
+When is [COURSE] available?,[QUARTER]
+When can I take [COURSE]?,[QUARTER]
+Does [COURSE] fulfill more than one requirement?,Yes or No
+Can I use [COURSE] to fulfill more than one requirement?,
+How many units is [COURSE]?,[COURSE_UNITS]
+How many units does [COURSE] have?,[COURSE_UNITS]
+How many units does [COURSE] fulfill?,[COURSE_UNITS] 
+What does [COURSE] fulfill?,[MMC-REQUIREMENTS]
+Does [COURSE] fulfill anything?,Yes or No
+What requirements does [COURSE] fulfill?,[MMC-REQUIREMENTS]
+How many lectures does [COURSE] have?,Number
+How many times a week does [COURSE] meet?,Number
+How many lectures make up [COURSE]?,Number
+Does [COURSE] have a lab?,[COURSE_LABORLEC]
+Do I have to take a lab with [COURSE]?,[COURSE_LABORLEC]
+How many labs does [COURSE] have?,[COURSE_LABORLEC]
+Does [COURSE] have any prerequisites?,Yes or No
+How many prerequisites does [COURSE] have?,[COURSE_PREREQS]
+Are there any prerequisites for [COURSE]?,Yes or No
+What classes can I take instead of [COURSE]?,[MMC-REQUIREMENTS]
+What are alternatives to [COURSE]?,[MMC-REQUIREMENTS]
+Are there any alternatives for [COURSE]?,Yes or No
+How many alternative does [COURSE] Have?,Number
+Can I take something else instead of [COURSE]?,Yes or No
+What courses substitute [COURSE]?,[Course(s)]or None
+What STAT courses have [COURSE] as a prereq?,STAT courses requiring [COURSE]: [COURSE]
+What courses do you need to take before taking [COURSE]?,STAT courses required before taking [COURSE]: [COURSE_PREREQS]
+Does [COURSE] have any preqs?,Yes:/No. [COURSE]
+Is [COURSE] being offered this quarter?,Yes/No
+Can I take [COURSE] this quarter?,Yes/No
+When's the next time I can take [COURSE]?,[COURSE] is expected to be offered during [QUARTER].
+Is [COURSE] being offered soon?,[COURSE] is expected to be offered during [QUARTER].
+Does [COURSE] help me get a stats minor?,Yes/No
+Does [COURSE] contribute to my stats minor?,Yes/No
+Has [COURSE] ever been offered by the stats department?,Yes/No records of [COURSE] being offered exist after [QUARTER].
+When has [COURSE] been offered?,[QUARTER]
+How many units is [COURSE]?,[COURSE_UNITS]
+What is the name of [COURSE]?,[NAME]
+What class is [COURSE]?,[NAME]
+What is the description of [COURSE]?,[COURSE] ([NAME]): [DESCRIPTION]
+What do you learn in [COURSE]?,[COURSE] ([NAME]): [DESCRIPTION]
+What term is [COURSE] typically offered?,[QUARTER]
+When is [COURSE] usually offered?,[QUARTER]
+Does [COURSE] fulfill any GE requirements?,Yes or No
+How many prerequisite classes are needed for me to take [COURSE]?,In order to take this course, a student would need to fulfill the [COURSE_PREREQS] prerequisites.
+List classes below [COURSE].,[COURSE]*
+List classes above [COURSE].,[COURSE]*
+Does [COURSE] require any MATH classes?,Yes or No
+Which classes have a [COURSE] prerequisite?,[COURSE]
+Does [COURSE] require instructor approval?,Yes/No
+Is [COURSE] being offered next quarter?,Yes/No.
+Is [COURSE] a graduate level course?,Yes/No.
+Is [COURSE] a undergraduate level course?,Yes/No.
+Does [COURSE] have non-statistics prerequisites?,Yes/No.
+Does [COURSE] have non-statistics and non-math prerequisites?,Yes/No.
+Is [COURSE] part of the data science minor?,Yes/No.
+What teachers teach [COURSE] this quarter?,[PROF]
+What teachers have taught [COURSE] in the past?,[PROF]
+Does [COURSE] require programming experience?,Yes/No.
+When should [COURSE] be taken based on the stat flowchart?,[TERM_YEAR]
+Are there sections for [COURSE] that are open next quarter?,Yes/No.
+Who is the highest ranked teacher teaching [COURSE]?,[PROF]
+Who is the lowest ranked teacher teaching [COURSE]?,[PROF]
+What data science minor courses have [COURSE] as a prerequisite?,[COURSE]
+Do I need [COURSE] to complete the data science minor?,Yes/No.
+Is [COURSE] an upper level or lower level course?,Upper level/Lower level.
+When was the last time [COURSE] was offered?,[QUARTER]
+Is [COURSE] an upper level course?,Yes/No.
+Is [COURSE] a lower level course?,Yes/No.
+When should I take [COURSE]?,This years flowchart can be found here: [MMC-FLOWCHART-LINK], other years can be found here: [MMC-FLOWCHART-LINK].
+What is [COURSE]?,[TEXT]
+When is [COURSE] typically offered?,[QUARTER]
+How many units is [COURSE]?,[COURSE_UNITS]
+Does the department offer [COURSE].,Yes/No.
+What class is [COURSE]?,[COURSE_DESCRIPTION].
+What will I learn in [COURSE]?,[COURSE_DESCRIPTION].
+Is there a class on [COURSE]?.,Yes, the class is [COURSE]./No.
+What class is [COURSE]?,[COURSE_NUMBER].
+What is the name of [COURSE]?,[COURSE_NAME].
+How many units is [COURSE]?,[COURSE_UNITS] units.
+Are there any workshops or study sessions available for [COURSE]?,Refer to the [AREA] bot.
+What are the prerequisites for [COURSE]?,The prerequisites for [COURSE] are [COURSE-PREREQS].
+What courses are needed to take [COURSE]?,The prerequisites for [COURSE] are [COURSE-PREREQS].
+How many units is [COURSE]?,[DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is worth [COURSE-UNITS].
+How much credits is [COURSE] worth?,[DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is worth [NUM-UNITS].
+When is [COURSE] offered?,[DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is typically offered in [QUARTER].
+What is the number for [COURSE]?,The number for [COURSE-NAME] is [DEPARTMENT-NAME] [COURSE-NUM].
+What courses have [COURSE] as a prerequisite?,[DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is a prerequisite for [DEPARTMENT-NAME] [COURSE-NUM]...
+What comes after [COURSE]?,[DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is a prerequisite for [DEPARTMENT-NAME] [COURSE-NUM]...
+What is the description for [COURSE]?,The description of [DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME] is [COURSE-DESC].
+Who should I take [COURSE] with?,Based on PolyRatings, [PROF] is the best professor for this course with a score of [POLY-SCORE]
+Who typically teaches [COURSE]?,The following professors have taught [COURSE]: [PROF]...
+Does [COURSE] have any non CS/SE prerequisites?,Yes. They are [DEPARTMENT-NAME] [COURSE-NUM]... / No
+Does [COURSE] have a lab?,Yes it is [COURSE-UNITS] units/No
+Is [COURSE] offered on a Credit/No Credit basis?,Yes/No
+Is there a grade prerequesite for [COURSE]?,Yes, it is a C- or better in [DEPARTMENT-NAME] [COURSE-NUM]
+Does [COURSE] have any corequisites?,Yes, they are [DEPARTMENT-NAME] [COURSE-NUM]...
+Does [COURSE] have any concurrent enrollements?,Yes, they are [DEPARTMENT-NAME] [COURSE-NUM]...
+How is [COURSE] listed?,The number for [COURSE-NAME] is [DEPARTMENT-NAME] [COURSE-NUM].
+Who is the best professor for [COURSE] with?,Based on PolyRatings, [PROF] is the best professor for this course with a score of [POLY-SCORE]
+Which professors have taught [COURSE]?,The following professors have taught [COURSE]: [PROF]...
+Which quarter is [COURSE] typically offered?,[COURSE-NAME] is typically offered in [TERMS]
+Does [COURSE] have a prerequisite from another department?,If yes: Yes, [COURSE-NAME] has prerequisites from [DEPARTMENTS]
+What course number does [COURSE] have?,[COURSE-NAME] has number [COURSE-NUMBER]
+What course name does [COURSE] have?,[COURSE-NUM] has name [COURSE-NAME]
+How many units of lab does [COURSE] have?,[COURSE-NAME] has [COURSE-UNITS] units
+Are there any recommended classes for [COURSE]?,if yes: Yes, they are [COURSE-NAMES]
+Does [COURSE] require consent of instructor?,Yes/No
+Is [COURSE] crosslisted?,if yes: Yes, it is crosslisted as [DEPARTMENT-NAME][COURSE-NUM]
+Which departments does [COURSE] have prerequisites in?,[COURSE-NAME] have prerequisites in these departments: [DEPARTMENTS]
+Does [COURSE] fulfill any GE requirements?,If yes: [COURSE-NAME] fulfills GE requirement [GE-AREA]
+On what level is [COURSE]?,[COURSE-NAME] is on level [LEVEL]
+Which courses require [COURSE],The following courses require [COURSE-NAME]: [DEPARTMENT-NAME][COURSE-NUM][COURSE-NAME]...
+Who is the best professor to take for [COURSE]?,[PROF] has the highest PolyRating - [Rating] - of all professors that teach [COURSE].
+Who should I take [COURSE] with?,[PROF] has the highest PolyRating - [Rating] - of all professors that teach [COURSE].
+Who teaches [COURSE]?,The next professors teaching [COURSE] are [PROF-List].
+Who is usually the professor for [COURSE]?,Recently, [COURSE] has been taught by [PROF-List].
+Who has taught [COURSE] in the past?,[PROF-List] have taught [COURSE].
+What is the highest rated polyrating professor for [COURSE]?,[PROF] is the highest rated professor for [Course].
+What is the highest rated polyrating professor that is currently teaching [COURSE]?,[PROF] is the highest rated professor currently teaching [Course].
+What is the highest rated polyrating professor that taught [COURSE] last quarter?,[PROF] is the highest rated professor that taught [Course] last quarter.
+What is the highest rated polyrating professor that is scheduled to teach [COURSE] next quarter?,[PROF] is the highest rated professor that teaching [Course] next quarter.
+What is the lowest rated polyrating professor for [COURSE]?,[PROF] is the lowest rated professor for [Course].
+What is the lowest rated polyrating professor that is currently teaching [COURSE]?,[PROF] is the lowest rated professor currently teaching [Course].
+What is the lowest rated polyrating professor that taught [COURSE] last quarter?,[PROF] is the lowest rated professor that taught [Course] last quarter.
+What is the lowest rated polyrating professor that is scheduled to teach [COURSE] next quarter?,[PROF] is the lowest rated professor that teaching [Course] next quarter.
+How many professors teach [COURSE]?,[N] instructors teach [Course].
+Which professors teach [COURSE]?,[PROF] teach [Course].
+What professor(s) typically teach [COURSE]?,[PROF] typically teach [Course].
+What professor(s) teach [COURSE] this quarter?,[PROF] are teaching [Course] this quarter.
+Which professors are teaching [COURSE] next quarter?,[PROF] are teaching [Course] next quarter.
+Who are the professors teaching [COURSE] next quarter?,[PROF] are teaching [Course] next quarter.
+Can I get tutoring in [COURSE]?,[STATTUTCONF].
+Is tutoring available for [COURSE]?,[STATTUTCONF].
+Is tutoring provided for [COURSE]?,[STATTUTCONF]
+During Stat tutoring, can I get help with [COURSE],[STATTUTCONF]
+What courses is [PROF] teaching this quarter?,This quarter, [PROF] is teaching [COURSE].
+What courses is [PROF] teaching next quarter?,Next quarter, [PROF] is teaching [COURSE].
+What is [PROF] schedule like this quarter?,[PROF] will be teaching [COURSE] at [COURSE-TIME] this quarter.
+What is [PROF] schedule like next quarter?,[PROF] will be teach [COURSE] at [COURSE-TIME] this next quarter.
+How many courses is [PROF] teaching?,[PROF] is teaching [PROF_COURSE_COUNT] classes.
+What are [PROF]'s research areas?,[PROF]s research areas are [PROF_RESEARCH_AREAS].
+How many research areas does [PROF] have?,[PROF]s research areas are [PROF_RESEARCH_AREAS].
+How many proposals has [PROF] written at Cal Poly?,[PROF] was written [PROF_PROPOSALS] at Cal Poly.
+Does [PROF] have a website?,Yes or No
+What is [PROF]'s website?, [PROF]'s website is [PROF_WEBSITE].
+Where can I learn more about [PROF]?, [PROF]'s website is [PROF_WEBSITE].
+Does [PROF] have a Cal Poly website?, Yes or No
+What classes does [PROF] teach?,[PROF] teaches the following classes: [PROF-COURSES].
+What buildings does [PROF] teach in?,[PROF] teaches in [LOCATION].
+What time are all [PROF]'s classes taught?,[PROF] teaches at [COURSE_TIMES].
+What classes are [PROF] teaching next quarter?,[PROF] is teaching [COURSE] next quarter.
+When are [PROF]'s office hours?,[PROF]s office hours are [PROF_OFFICE_TIMES].
+Does [PROF] have office hours right now?,[yes/no] [PROF]s office hours are [PROF_OFFICE_TIMES].
+Does [PROF] have office hours later today?,[yes/no] [PROF]s office hours are [PROF_OFFICE_TIMES].
+Does [PROF] have office hours tomorrow?,[yes/no] [PROF]s office hours are [PROF_OFFICE_TIMES].
+Where is [PROF]'s office?,[PROF] has office hours in [LOCATION].
+What is [PROF]'s email?,[PROF]s email is [PROF_EMAIL].
+How can I email [PROF]?,[PROF]s email is [PROF_EMAIL].
+What is the email of [PROF]?,[PROF]s email is [PROF_EMAIL].
+Is [PROF]'s email listed?,Yes or No.
+Is [PROF] a professor at Cal Poly?,Yes or No.
+What is professor [PROF]'s first name?,[PROF]s first name is [PROF_NAME]
+Does [PROF] currently teach at Cal Poly?, Yes or No.
+What is [PROF]'s phone number?,[PROF]s phone number is [PROF_PHONENO]
+Does [PROF] have a phone number listed?, Yes or No.
+Is there a phone number listed for [PROF]?, Yes or No.
+Which courses does [PROF] teach?,[PROF] teaches: [COURSE-NAMES]
+Is [PROF] a faculty advisor?,Yes or No.
+What are the research interests of [PROF]?,[PROF] is interested in [RESEARCH-AREA-LIST].
+What research areas are [PROF] interested in?,[PROF] is interested in [RESEARCH-AREA-LIST].
+What is [PROF] researching?,[PROF]'s research interests are [RESEARCH-AREA-LIST]
+How good of a professor is [PROF]?,All Cal Poly professors are great, but [PROF] has a PolyRating of [Rating].
+Is [PROF] a good professor?,All Cal Poly professors are great, but [PROF] has a PolyRating of [Rating].
+Is [PROF] well liked?,[PROF] has a polyrating of [Rating].
+Which of [PROF] has the highest polyrating?,[PROF] has the highest PolyRating.
+What is the URL for [PROF]'s polyratings?,[PROF]'s PolyRatings page can be found at [URL].
+How many courses is [PROF] teaching?,This quarter, [PROF] is teaching [Number] courses.
+How many different classes will [PROF] teach next quarter?,Next quarter, [PROF] will teach [Number] different courses.
+What courses has [PROF] taught?,In the last year, [PROF] has taught [COURSE].
+What courses does [PROF] teach?,In the last year, [PROF] has taught [COURSE]. This quarter, they are teaching [COURSE].
+What is [PROF] teaching this quarter?,[PROF] is teaching [COURSE].
+Is [PROF] teaching any classes this quarter?,Yes, they are teaching [COURSE]./No.
+Where is [PROF] teaching right now?,[PROF] is currently teaching [COURSE] in [Room]./[PROF] is not currently teaching.
+Where will [PROF] be teaching next?,[PROF] will be teaching [COURSE] in [Room] at [Time].
+Where did [PROF] go to school?,[PROF] attended [University] as an undergraduate and [University] for their [Degree-Type].
+What degrees does [PROF] have?,[PROF has a [Degree-List].
+What schools has [PROF] attended?,[CSSE has attended [University-List].
+Who are the [PROF] in the CSSE program at Cal Poly?,[PROF-List] are the CSSE [Faculty-Type] at Cal Poly.
+What school did [PROF] get their degree from?,[PROF] got their [Degree] from [University].
+How many degrees does [PROF] have?,[PROF] has [Number] degrees.
+How long has [PROF] taught at Cal Poly?,[PROF] has taught at Cal Poly for [Number] years.
+What year did [PROF] start at Cal Poly?,[PROF] started teaching at Cal Poly in [Year].
+When did [PROF] start teaching at Cal Poly?,[PROF] started teaching at Cal Poly in [Year].
+Did [PROF] study at Cal Poly?,Yes./No.
+When was [PROF] a professor at Cal Poly?,[PROF] was a professor at Cal Poly from [Date-Range].
+What is the highest degree of [PROF]?,[PROF]'s highest degree is [Degree-Type].
+Where did [PROF] get their most recent degree?,[PROF] got their most recent degree from [University].
+What is [PROF]'s highest degree?,[PROF] got their [Degree-Type] from [University].
+Is [PROF] still working at Cal Poly?,Yes./No, they retired in [Year].
+Does [PROF] still teach at Cal Poly?,Yes./No, they retired in [Year].
+Has there ever been a professor [PROF] in Cal Poly CSSE?,Yes./No.
+Did [PROF] ever teach in the computer science department?,Yes./No.
+What published research projects does [PROF] have?,[PROF] has published [Paper-List].
+How many research papers has [PROF] submitted for Cal Poly?,[PROF] has submitted [Number] papers.
+What papers has [PROF] contributed to the Cal Poly Digital Commons?,[PROF] has published [Paper-List].
+Has [PROF] published any papers?,Yes, they have published [Paper-List]./No.
+What research papers has [PROF] written?,[PROF] has published [Paper-List].
+What is the average length of papers published by [PROF]?,[PROF]'s papers are an average of [Number] pages long.
+Where can I learn more about [PROF]'s research?,[PROF]'s most recent paper can be found at [URL] and their personal website is [URL].
+In what journals has [PROF] been published?,[PROF] has been published in [Journal-List].
+What journals has [PROF] published papers in?,[PROF] has been published in [Journal-List].
+What is [PROF]'s email?,[PROF]'s email is [PROF_EMAIL].
+How can I contact [PROF]?,[PROF]'s email is [PROF_EMAIL] and their phone number is [Phone-Number].
+What is [PROF]'s contact information?,[PROF]'s email is [PROF_EMAIL] and their phone number is [Phone-Number].
+What is [PROF]'s phone number?,[PROF]'s phone number is [Phone-Number].
+What number do I call to reach [PROF]?,[PROF]'s phone number is [Phone-Number].
+How can I reach [PROF]?,[PROF]'s email is [PROF_EMAIL] and their phone number is [Phone-Number].
+Where is [PROF]'s office?,[PROF]'s office is [LOCATION].
+In what room is [PROF]'s office?,[PROF]'s office is [LOCATION].
+Where can I find [PROF]'s website?,[PROF]'s website is [URL].
+Does [PROF] have a personal website?,[PROF]'s website is [URL].
+What is [PROF]'s home page?,[PROF]'s website is [URL].
+What is the email address of [PROF]?,[PROF]'s email is [Email].
+What is the office of [PROF]?,[PROF]'s office is [LOCATION].
+What are the names and emails of all computer science [PROF]?,Their names and emails are: [PROF-Email-List].
+Who are the computer science [PROF]s at Cal Poly?,They are [PROF-List].
+Who shares an office with [PROF]?,[PROF] shares an office with [PROF].
+Does anyone share an office with [PROF]?,Yes, [PROF] shares an office with [PROF]./No.
+What time are [PROF]'s office hours?,[PROF]'s office hours are [Office-Hours].
+When can I visit [PROF]'s office?,[PROF]'s office hours are [Office-Hours].
+Is [PROF] hosting office hours right now?,Yes, until [Time]./No.
+Is [PROF] in their office now?,Yes, until [Time]./No.
+What is the job title of [PROF]?,[PROF] is a [Faculty-Type].
+Is [PROF] a lecturer or a professor?,[PROF] is a [Faculty-Type].
+What is the position of [PROF]?,[PROF] is a [Faculty-Type].
+What is [PROF]'s job at Cal Poly?,[PROF] is a [Faculty-Type].
+In the CSSE department, how many faculty members are [PROF]?,There are [Number] [Faculty-Type]s in the CSSE department.
+How many computer science [PROF] are there at Cal Poly?,There are [Number] [Faculty-Type]s in the CSSE department.
+Who are the professors with the last name [PROF]?,[PROF-List] have the last name [PROF].
+Where is the next place I can find [PROF]?,[PROF] will be in [Room] from [Time] to [Time].
+When can I next find [PROF] on campus?,[PROF] will be in [Room] from [Time] to [Time].
+What are [PROF]'s personal interests?,[PROF] is interested in [Interests].
+What are [PROF]'s professional distinctions?,[PROF]s professional distinctions are [Distinctions]
+Where did [PROF] get their BS?,[PROF] recieved their BS at [Univesity].
+Which school did [PROF] get their BS at?,[PROF] received their BS at [University].
+Which school did [PROF] get their Master's at?,[PROF] received their Master's at [University].
+Where did [PROF] get their Master's?,[PROF] received their Master's at [University].
+Where did [PROF] get their doctorate?,[PROF] received their doctorate at [University].
+Which school did [PROF] get their doctorate at?,[PROF] received their doctorate at [University].
+When did [PROF] get their BS?,[PROF] received their BS on [Date].
+What year did [PROF] get their BS?,[PROF] received their BS on [Date].
+When did [PROF] get their Master's?,[PROF] received their Master's on [Date].
+What year did [PROF] get their Master's?,[PROF] received their Master's on [Date].
+When did [PROF] get their doctorate?,[PROF] received their doctorate on [Date].
+What year did [PROF] get their doctorate?,[PROF] received their doctorate on [Date].
+What is [PROF]'s title?,[PROF] has the title of [Title].
+What is the title of [PROF]?,[PROF] has the title of [Title].
+What is the email of [PROF]?,[PROF]'s email is [PROF-EMAIL].
+What is [PROF]'s phone number?,[PROF]'s phone number is [Phone Number].
+What is the phone number of [PROF]?,[PROF]'s phone number is [Phone Number].
+Where is [PROF]'s office?,[PROF]'s office is in [Room].
+What building is [PROF]'s office in?,[PROF]'s office is in [Building].
+What time does [PROF] have office hours today?,[PROF] has office hours at [Time].
+What days does [PROF] have office hours?,[PROF] has office hours on [Weekdays].
+Which professors neighbor [PROF]?,[PROF] neighbor [PROF].
+How many professors neighbor [PROF]?,[N] professors neighbor [PROF].
+When will [PROF] be at his/her office?,[PROF] will be at their office at [Time].
+Is [PROF] at their office right now?,[Boolean].
+How many classes is [PROF] teaching this quarter?,[PROF] is teaching [N] classes this quarter.
+How many classes is [PROF] teaching next quarter?,[PROF] is teaching [N] classes next quarter.
+How many polyratings does [PROF] have?,[PROF] has [N] polyratings.
+Does [PROF] recognize student difficulties?,[Boolean].
+How well does [PROF] recognize student difficulties?,[PROF] recognizes student difficulties with a [Star] star rating.
+Does [PROF] present material clearly?,[Boolean].
+How clearly does [PROF] present material?,[PROF] presents material with a [Star] star rating.
+What grades has [PROF] given out (on polylearn)?,[PROF] has given out [Grades].
+What is the average polyratings grade for [PROF]?,[PROF] has an average polyratings grade of [Grade].
+What professional distinctions does [PROF] have?,[PROF] has [Professional Distinctions].
+Does [PROF] have any areas of research?,[PROF] is researching [Topic].
+What are the Mathematics/Statistics Support Elective options for [MMC],The available Mathematics/Statistics Support Elective options for [MMC] are: [COURSE]
+What are the approved technical electives for [MMC],The available approved technical elective options for [MMC] are: [COURSE]
+Which courses will count as approved external electives for [MMC],The available approved external elective options for [MMC] are: [COURSE]
+Is taking the GRE required for acceptance into the 4+1 program for [MMC]?,No, for [MMC] majors, students do not need to take the General Record Exam.
+What classes are availabe to satisfy the pre-requisite technical elective course for [MMC]?,The available technical elective pre-requisite options for [MMC] are: [COURSE]
+Which courses will count as approved pre-requisite technical electives for [MMC],The available technical elective pre-requisite options for [MMC] are: [COURSE]
+What [MMC] electives are offered next quarter?,The electives being offered for [MMC] next quarter are: [COURSE].
+What are the electives being offered for [MMC] next quarter?,The electives being offered for [MMC] next quarter are: [COURSE].
+Which electives are offered for [MMC] for next quarter?,The electives being offered for [MMC] next quarter are: [COURSE].
+What courses are required for the [MMC] minor?,The required courses for the [MINOR] minor are: [COURSE].
+Which courses do I need to take for the [MMC] minor?,The required courses for the [MINOR] minor are: [COURSE].
+How many units are required to obtain the 4+1 blended BS/MS degree for [MMC]?,[NUM_UNITS] are required to obtain a BS/MS degree via the 4+1 program for [MMC]
+What courses are required for the [MMC] concentration?,The required courses for the [CONCENTRATION] concentration are: [COURSE].
+Which courses do I need to take for the [MMC] concentration?,The required courses for the [CONCENTRATION] concentration are: [COURSE].
+What are the life science support elective options for [MMC],[MMC] requires the following life support courses: [COURSE]
+What are the support course options for [MMC]?,[MMC] requires the following support courses: [COURSE]
+Which courses are part of the [MMC]?,[CONCENTRATION] has the following courses: [COURSE].
+Which courses are optional for [MMC]?,The following courses are optional for [MINOR]: [COURSE].
+Which courses in [MMC] can I skip through AP Credit?,The following AP exams will give you credit: [EXAM_1] -> [COURSE_1], [EXAM_2] -> [COURSE_2], ..., [EXAM_N] -> [COURSE_N].
+Which courses in [MMC] can I skip through IB Credit?,The following IB exams will give you credit: [EXAM_1] -> [COURSE_1], [EXAM_2] -> [COURSE_2], ..., [EXAM_N] -> [COURSE_N].
+Which minor or concentration adds the least amount of graduation time to the [MMC]?,[MINOR/CONCENTRATION] adds only [NUMERIC] extra units to [MMC], assuming that you double-count as many classes as possible.
+How many general education courses do I need to take for the [MMC] major?,In order to complete the [MMC] major, you will need to take [NUM_COURSES] general education courses.
+How many support courses do I need to take for the [MMC] major?,In order to complete the [MMC] major, you will need to take [NUM_COURSES] courses.
+What is the units break down for [MMC] major?,You need [NUM_UNITS] major units, [NUM_UNITS] GE units, [NUM_UNITS] support units, [NUM_UNITS] life science support elective units, ..., [NUM_UNITS] free elective units
+How many GE units do I need for the [MMC] major?,You need [NUM_UNITS] GE units to complete the [MMC] major.
+How many support units do I need for the [MMC] major?,You need [NUM_UNITS] support units to complete the [MMC] major.
+How many units do I need for the [MMC] major?,You need [NUM_UNITS] units to complete the [MMC] major.
+In order to complete the [MMC] major, how many units will I need?,You need [NUM_UNITS] units to complete the [MMC] major.
+How many units do I need for the [MMC] minor?,You need [NUM_UNITS] units to complete the [MINOR] minor.
+How many units does the [MMC] require?,The [MMC] requires [NUMERIC] units to graduate.
+How many classes per quarter do I have to take for [MMC]?,To finish the [MMC] in 4 years, you must average [NUMERIC] classes per quarter.
+How many concentrations are there in [MMC]?,There are [NUMERIC] concentrations in [MMC]. They are: [CONCENTRATION_LIST].
+How many courses are required for [MMC]?,[MINOR] requires [NUMERIC] courses. They are:  [COURSE].
+Can I double major with [MMC]?,[Y]: In addition to [MMC], you may also major in [MMC]: You may not double major with [MMC].
+What are the degree requirements for [MMC]?,The degree requirements for [MMC] are: [DEGREE_REQUIREMENTS]
+How many students are enrolled in [MMC]?,There are currently [TOTAL_COUNT] students enrolled in [MMC]
+Is there a BS/MS blend with [MMC]?,[Y]: [MMC] has a 4+1 BS/MS program or [N]: [MMC] currently does not have a blended Bachelor's and Masters program
+How many units are required for [MMC]?,[TOTAL_COUNT] units are required to obtain a [MINOR] minor
+Does an inquiry need to be submitted to switch into [MMC],If one is switching within the College of Engineering into [MMC], then there is no portal inquiry required to switch.
+What are the minimum requirements to switch into [MMC],To switch into [MMC]: [REQUIREMENTS]
+Does [MMC] contain any free electives?,Y/N: [MMC] does (not) have free electives are part of its degree requirements
+What courses are needed to obtain [MMC],To obtain the [CONCENTRATION] concentration, students must take [COURSE][0], [COURSE][1]...and [COURSE][N]
+Is there a GPA requirement to enroll in [MMC],Y/N, there is (not) a GPA requirement to begin this [CONCENTRATION].  if yes: The GPA requirement to enroll is [GPA_REQ]
+How many tech electives are required for [MMC]?,There are [TOTAL_ELECTIVE_COUNT] electives required as part of the [MMC] degree requirements
+What are the general education categories required for [MMC] majors?,The general education categories needed for [MMC] majors are [GE_TYPES]
+Are there any [MMC] classes that can be taken by credit/no credit?,N, there are no major classes for [MMC] that can be taken on a pass/fail basis.
+Can any technical electives for [MMC] be taken by credit/no credit?,N, technical electives for [MMC] majors are not allowed to be taken on a pass/fail basis.
+How many GEs do I have to take in [MMC]?,You need to take [major-ge-units] units to graduate in [major].
+How many general educations do I have to take in [MMC]?,You need to take [major-ge-units] units to graduate in [major].
+How many general education classes do I have to take in [MMC]?,You need to take [major-ge-units] units to graduate in [major].
+How many units of electives do I need for [MMC]?,You need [ge-elective-units-major] of electives to graduate in [major].
+What is the total number of units of electives needed to graduate in [MMC]?,You need [ge-elective-units-major] of electives to graduate in [major].
+How many approved electives do I have to take for the [MMC]?,You have to take [minor-approved-electives-units] approved electives for the [minor].
+What are the approved electives I can take for a [MMC]?,The approved electives for a [minor] are [approved-electives-minor]
+What are the program educational objectives for the [MMC]?,The program educational objectives for the [major] are [major-peos].
+What are the learning outcomes of [MMC]?,The learning outcomes for the [major] are [major-learning-outcomes-list].
+What are the learning outcomes for [MMC]?,The learning outcomes for the [major] are [major-learning-outcomes-list].
+What are the [MMC] courses?,The [major] courses are [COURSE].
+What are the courses required for [MMC]?,The [major] courses are [COURSE].
+How many courses do we have in [MMC]?,The number of courses in [major] are: [total-num-of-courses].
+What are some [MMC] resources that are available?,These are some that are available to you: [MMC-resources].
+What resources are there for [MMC]?,These are some resources that are available to you: [MMC-resources].
+Where can I get advising for a [MMC]?,These are some resources that are available to you: [MMC-resources].
+What are the course numbers that are considered independent study in [MMC]?,The courses that are considered independent study are: [independent-study-courses].
+How many units does the [MMC] require?,The [minor] requires [minor-required-units] required units and [minor-approved-elective-units] approved elective units.
+How many units do I need for a [MMC]?,The [minor] requires [minor-required-units] required units and [minor-approved-elective-units] approved elective units.
+What are the steps to apply for the [MMC]?,You need to take [minor-steps] to attain a  [minor].
+How do I apply for a [MMC]?,You need to take [minor-steps] to attain a [minor].
+What are the required courses for the [MMC]?,The required courses for the [minor] are: [required-minor-courses].
+What are the prerequisites for the [MMC]?,You need to meet the following requirements to apply for the [minor]: [minor-prerequisites].
+Where can I get the application for the [MMC]?,You can access the application for the [minor] in the following link: [minor-application-link].
+Where can I get the flowchart for the [MMC]?,You can access the flowchart for CSSE students pursuing a [minor] in the following link: [minor-flowchart-link].
+What courses should I take each quarter for the [MMC]?,In order to determine what courses you should take each quarter in order to pursue the [minor], you should visit the minors flowchart. You can access the flowchart for CSSE students pursuing a [minor] in the following link: [minor-flowchart-link].
+How many classes do I have to take for [MMC]?,You need to take [total-units] units worth of classes for [MMC]. The total number of classes may vary.
+What is the total number of classes needed to graduate in [MMC]?,You need to take [total-units] units worth of classes for [MMC]. The total number of classes may vary.
+How do I declare [MMC] concentration?,You need to complete the following steps [concentration-type-steps]
+What are the required courses for the [MMC]?,The required courses for the [concentration] are [concentration-required-courses].
+Who are the minor advisors for [MMC]?,The minor advisors for [minor] are [minor-advisors].
+Who can I contact to get more information about the [MMC]?,You can contact [minor-advisors] to learn more about [minor].
+Who can I contact if I have questions about [MMC]?,If you have questions about [minor], you may contact [contact-info].
+Who will help me if I have doubts about [MMC]?,If you have questions about [minor], you may contact [contact-info].
+Where can I get the flowchart for [MMC]?,In order to view the [year-range] flowchart for [MMC], visit the following link: [flowchart-link].
+What are the GE area required for [MMC]?,List of Strings
+What are the undergraduate courses for [MMC]?,List of Strings
+What are the graduate courses for [MMC]?,List of Strings
+How many courses are required for [MMC]?,Number
+How many GE areas have to be completed for [MMC]?,Number
+What minor would make more sense with [MMC],String
+At best, how long last [MMC]?,Number
+How many years are necessary to graduate from [MMC]?,Number
+What are the tech electives for [MMC]?,[Course(s)]
+What courses are electives for [MMC]?,[Course(s)]
+What electives can I take to get a [MMC]?,[Course(s)]
+What courses are credit not allowed for [MMC]?,The following courses do not allow credit for [MMC] students: [DEPARTMENT-NAME] [COURSE-NUM] [COURSE-NAME]...
+What are the program objectives of [MMC]?,[Program Objectives]
+What are the learning outcomes of [MMC]?,[Learning Outcomes]
+How many people are in the classes for [MMC]?,[Number] are in a typical class for [MMC].
+What are the prerequisites for [MMC]?,[MMC]'s prerequisites are: [list of prerequisites]
+Is there a [MMC]?,(Yes/no), the CSSE department (does/doesn't) offer the following a [MMC]
+What is the [MMC]?,The [MMC] encompasses [text]
+Is [MMC] a part of another department?,The [MMC] is a part of the [DEPT].
+Who is the advisor for [MMC]?,[Name] is the advisor for the [MMC] 
+How many units to get a Minor in [MMC]?,[MMC] requires [units] number of units.
+How many prerequisites are there for [MMC]?,[Count] prerequisites for [MMC].
+How many students take [MMC]?,[Number]
+Will [MMC] help me get a job?,[MMC] can do [about].
+How many classes would I have to take to get a Minor in [MMC]?,[Units/4] classes are required for [MMC]
+How do I learn more about [MMC]?,Here is info about [MMC]: [about]
+Which classes are crosslisted in [DEPT]?,[COURSE] are crosslisted in [DEPARTMENT_ABBREVIATION].
+What [DEPT] courses are required?,List of Strings
+What classes are required from [DEPT]?,List of Strings
+How many [DEPT] courses are required?,Number
+How many courses from [DEPT] are required?,Number
+How many classes of [DEPT] do I have to complete?,Number
+What clubs does the [DEPT] department offer?,The following clubs are in the [DEPT] department: [Club], .
+How many clubs are in the [DEPT] department?,There are [Number] clubs.
+What types of clubs does the [DEPT] department offer?,[Club(s)] are (is a) [Type] club(s),.
+How do you sign up to be a [DEPT] tutor?,Contact [Faculty] at [Email].
+What accreditations does [DEPT] have?,[DEPT] has [list of accreditations].
+What college does [DEPT] belong to?,[DEPT] belongs to the college of [college].
+What positions are available in [DEPT]?,[DEPT] has the following positions available: [list of positions].
+Can I get a job at Cal Poly in [DEPT]?,[DEPT] has the following available positions: [list of positions available].
+Who is the advisor of the [CLUB] club?,[Faculty] is the advisor of the [Club] club.
+What is the email of the President of the [CLUB] club?,[Person]s email is [Email].
+What type of club is the [CLUB] club?,It is a [Type] club.
+What is the email for the advisor of the [CLUB] club?,[Faculty]s email is [Email].
+What is the [CLUB] club?,[Club-Description]
+What is the homepage of the [CLUB] club?,The homepage is [Club-Website].
+What is the box number of the [CLUB] club?,The box number to the [Club] club is [Box-Number].
+What is the email for the [CLUB] club?,The email for the [Club] club is [Email].
+What are the social media accounts for the [CLUB] club?,[Club] clubs Facebook page is [Facebook]. [Club] clubs Instagram account is [Instagram].
+How many people follow the [CLUB] club's Facebook page?,[Followers] follow the [CLUB] clubs Facebook page.
+Are there any new posts on the [CLUB] club's Facebook page?,There are [Posts] new posts today and [Posts] posts in the past 30 days on the [CLUB] clubs Facebook page.
+What is the next event for [CLUB]?,The next event is [Stat-Event] on [Date].
+When is the next event for [CLUB]?,The next event is [Stat-Event] on [Date].
+How many people follow the [CLUB] club's Facebook page?,[Followers] follow the [CSSE-Club] clubs Facebook page.
+What is the next event for [CLUB]?,The next event is [CSSE-Event] on [Date].
+When is the next event for [CLUB]?,The next event is [CSSE-Event] on [Date].
+Who are the officers for [CLUB] club?,The officers for [CLUB] are: [Person] ([Position]),.
+Who are the officers for [CLUB] club?,The officers for [CSSE-Club] are: [Person] ([Position]),.
+When are the meetings for [CLUB] club?,The meetings are [Day] at [Time] in room [Room].
+When is the next meeting for [CLUB] club?,The next meeting is at [Date] at [Time] in room [Room].
+Where is [CLUB] located?,[CLUB] is located in [Room].
+Where is [CLUB] located?,[CSSE-Club] is located in [Room].
+Does [CLUB] have their own room? (No.,Yes.)
+What college is affiliated with the [CLUB] club?,The College of [College].
+What are some past events of the [CLUB] club?,Some past events are [Stat-Event] on [Date],.
+What are some past events of the [CLUB] club?,Some past events are [CSSE-Event] on [Date],
+What was the last event of the [CLUB] club?,The last event was [Stat-Event] on [Date].
+What was the last event of the [CLUB] club?,The last event was [CSSE-Event] on [Date].
+When was the last event of [CLUB] club?,The last event was [Stat-Event] on [Date].
+Who is the president of the [CLUB] club?,[Person] is the president.
+Who is the vice president of the [CLUB] club?,[Person] is the vice president.
+Who is the secretary of the [CLUB] club?,[Person] is the secretary.
+Who is the treasurer of the [CLUB] club?,[Person] is the treasurer.
+How can I contact [CLUB]?,Contact [Club] via [Email].
+What is the phone number of the President of the [CLUB] club?,[Person]s phone number is [Phone Number].
+What is the phone number of the Advisor of the [CLUB] club?,[Faculty]s phone number is [Phone Number].
+When was the [CLUB] established?,The [CLUB] was established on [Date].
+When was the [CLUB] established?,The [CLUB] was established on [Date].
+Does the [CLUB] have an office?,No./Yes.
+Where is the office of the [CLUB]?,The [CLUB] has no office./It is in [Room].
+How many officers does the [CLUB] have?,The [CLUB] has [Number] officers.
+How many teams does the [CLUB] have?,The [CLUB] has [Number] teams.
+Where will the next event of the [CLUB] be held?,The next event of the [CLUB] will be held in [Room] or [Place].
+When will the next event of the [CLUB] be held?,The next event of the [CLUB] will be held at [Time] on [Date].
+How many events does the [CLUB] have next week?,The [CLUB] has [number] events next week.
+What is the next event of the [CLUB]?,It is the [Event].
+What is the website link for [CLUB]?,The URL is [CLUB_WEBSITE].
+Is there a website for [CLUB]?,[YesOrNo] (if yes then: The URL is [CLUB_WEBSITE].)
+How do I learn more about [CLUB]?,The URL for [CSSESTATClubOrgName] is [CLUB_WEBSITE].
+What does [CLUB] do?,[club description].
+Who should I contact for [CLUB]?,[ContactName].
+Is there a contact for [CLUB]?,The contact is [NAME].
+What is the location of [CLUB]?,[LOCATION]
+Where is [CLUB]?,The club location is [LOCATION].
+Where can I visit [CLUB] online?,The URL is [CLUB_WEBSITE].
+What is the URL for [CLUB]?,The URL is [CLUB_WEBSITE].
+Can you describe the [CLUB]?,[club description].
+Could you give me a brief overview of [CLUB]?,[club description].
+Who is the chief contact for [CLUB]?,[ContactName]
+Who should I get in touch with for [CLUB]?,[ContactName]
+What is the general contact information for [CLUB]?,The email is [ClubGenEmail] and the phone number is [ClubGenPhone]
+Who is the club adviser for [CLUB]?,The club adviser for [CSSESTATClubOrgName] is [FacultyAdviser]
+What teachers teach a class in [LOCATION]?,[PROF] teach in [building name].
+Which classes are taught in [LOCATION]?,[COURSE] are taught in [building name].
+Do any teachers have office hours in [LOCATION]?,[yes/no] [teacher]s office hours are in [office location]
+What professors have offices in [LOCATION]?,[PROF] have offices in [Building].
+Which professors have office hours in [LOCATION]?,[PROF] have office hours in [Room].
+Who are the professors with office hours in [LOCATION]?,[PROF] have office hours in [Room].
+Whose office is in [LOCATION]?,[PROF]'s office is in [Room]
+Which professors have offices in building [LOCATION]?,[PROF] have offices in building [Building].
+How many professors have offices in building [LOCATION]?,[N] professors have offices in building [Building].

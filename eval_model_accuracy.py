@@ -1,4 +1,4 @@
-import Generate_Data
+from resources import Generate_Data
 from question_classifier import QuestionClassifier
 
 def eval_model_accuracy():
