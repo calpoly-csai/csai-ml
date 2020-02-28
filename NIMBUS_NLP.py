@@ -36,6 +36,7 @@ class NIMBUS_NLP:
                                         extract_variables(input_question)
 
         classifier = QuestionClassifier()
+        classifier.load_latest_classifier()
         answer = classifier.classify_question(normalized_sentence)
 
         return_tuple = (input_question, normalized_sentence,
